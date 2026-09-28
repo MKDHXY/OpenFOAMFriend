@@ -1,0 +1,18 @@
+[
+  {
+    "mode": "FULL",
+    "file": "OpenFoamFriend_FULL_v20260928_164718.zip",
+    "bytes": 1683955406,
+    "sha256": "9f7d0131c0e66e5db9173ebeb81e530ad5556ab2b8daab8ff2ff70ca63dffcc0",
+    "zip_CRC_PASS": true,
+    "file_count": 8920
+  },
+  {
+    "mode": "LITE",
+    "file": "OpenFoamFriend_LITE_v20260928_164718.zip",
+    "bytes": 521567830,
+    "sha256": "65bc0a8188e99e833efe5f7bc028a60ff5ac21bdf7f95a76600c7e5bee57dcfb",
+    "zip_CRC_PASS": true,
+    "file_count": 8911
+  }
+]

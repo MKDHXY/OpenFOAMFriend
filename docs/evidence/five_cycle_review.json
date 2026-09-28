@@ -1,0 +1,97 @@
+{
+  "release": "v20260927_112849",
+  "five_rounds_passed": true,
+  "cycles": [
+    {
+      "cycle": 1,
+      "problem": "No explicit expert mode; direct tools are difficult to discover.",
+      "problem_zh": "专家模式没有明确入口，直接工具难以发现。",
+      "improvement": "Persistent compact Expert/Guided selector and expert tools hub; actual mode-switch and cancellation tests.",
+      "improvement_zh": "紧凑且持续可见的专家/引导选择与专家工具入口；实测切换与取消。",
+      "tested_at": "2026-09-27T11:32:18+1000",
+      "evidence": "reynolds_cycle_1.json",
+      "result": "PASS"
+    },
+    {
+      "cycle": 2,
+      "problem": "Re is display-only and reference length is implicit.",
+      "problem_zh": "Re 只能显示，参考长度含义不明确。",
+      "improvement": "SI Re calculator, geometric/custom L and U/nu solve; 66 combinations and 1–10^7 endpoints; consistent force/FFT reference.",
+      "improvement_zh": "SI Re 计算器、几何/自定义 L、U/nu 联动；66 组及 1–10^7 端点测试；力系数与 FFT 参考统一。",
+      "tested_at": "2026-09-27T11:34:10+1000",
+      "evidence": "reynolds_cycle_2.json",
+      "result": "PASS"
+    },
+    {
+      "cycle": 3,
+      "problem": "Re alone cannot certify a model or mesh; generic recommendations would be misleading.",
+      "problem_zh": "仅凭 Re 无法认证模型或网格，泛化推荐容易误导。",
+      "improvement": "Goal-specific, cylinder-scoped heuristic advice; 3D/span/wall/Mach limitations and primary sources.",
+      "improvement_zh": "按目标和圆柱适用范围给出启发建议，说明三维/展向/近壁/Ma 限制并提供原始来源。",
+      "tested_at": "2026-09-27T11:35:13+1000",
+      "evidence": "reynolds_cycle_3.json",
+      "result": "PASS"
+    },
+    {
+      "cycle": 4,
+      "problem": "Dictionary overrides can supersede GUI values; older mesh evidence can be stale.",
+      "problem_zh": "字典覆盖可能替代界面参数；旧网格证据可能失配。",
+      "improvement": "Explicit U/nu override review/reset, design and case-metadata matching, gated model-only application.",
+      "improvement_zh": "明确核对/重置 U/nu 覆盖，匹配设计与算例元数据，受控地只应用模型。",
+      "tested_at": "2026-09-27T11:36:30+1000",
+      "evidence": "reynolds_cycle_4.json",
+      "result": "PASS"
+    },
+    {
+      "cycle": 5,
+      "problem": "Real cold build failed on Windows CRLF; repeat mesh measurement was slow; bad metrics and narrow layouts need guarding.",
+      "problem_zh": "真实首次编译因 Windows CRLF 失败；重复网格测量耗时，非法指标与窄布局需保护。",
+      "improvement": "Force LF Make/files; genuine cold compile/MPI retest; mesh SHA-256 cache with threshold checks; finite/Mach/stale guards; native bilingual visual QA and full-pipeline regression.",
+      "improvement_zh": "Make/files 强制 LF，真实首次编译/MPI 复测；网格 SHA-256/阈值缓存；有限值/Ma/失配检查；原生中英视觉及全流程回归。",
+      "tested_at": "2026-09-27T11:50:44+1000",
+      "evidence": "reynolds_cycle_5.json",
+      "result": "PASS"
+    }
+  ],
+  "source_sha256": {
+    "off/__init__.py": "f41f53925ccbb705660ed0e728a306ac9296bb067c852dbaa221e17f1af7780d",
+    "off/advisor.py": "362d3a42f9684ca1e171e57780b010d66459eedcfaff09b9f33e88578c702e5c",
+    "off/advisor_gui.py": "3401f91a59f3e8f9a5104481fd34cf480773eda7f24f6b528084d50dbf92190e",
+    "off/backend.py": "1c29b1b1c09377cf6645d4604cddf3c54edd3e42dca885088b7755643b0a07ec",
+    "off/camera.py": "e5a6c488811130fa72af78abf6ada12b5c5a71b2ccc34e1e7b493ffb57c3c48e",
+    "off/canvas.py": "b12737b8a6dc456a7aaf2d0fdb814e159afa3cf31121d6d390990782269eb5ef",
+    "off/colourmap.py": "f01f13ceb9cf4af3b45ca12e4d4fc5fab10890faba3a993988873a2817393f97",
+    "off/compact_navigation.py": "0eeec8f129b086f8afa6532f138a8bf6cdee9ca5fe4d18c85030a4c7b5c0e045",
+    "off/design3d.py": "2009930f739f7e78e01c17fa9723a5a3abce8165e56510b2fb47f04a60a7acc5",
+    "off/dictionary_editor.py": "a5ffe980345edab115b5be2c24cff0a66a1ea0ddf04cd50c1c26eeb957a61870",
+    "off/domain_dialog.py": "af242bf0eb30d39e36d47ffdbf17eb4f5b4a9fc48393dc6132cf655322aabe62",
+    "off/grading.py": "0cfa35859caf7e4d3601a9ad4d078f164ec755d7ecc5468abeefaef964709507",
+    "off/gui.py": "770604ddd9c0c4fcaf096b589af0baa0ed6106d06610d6f30fb5ebb96647e1aa",
+    "off/i18n.py": "921e334d9bd1f7c3c52bcdf19b4dfee732b0600d07fb2596da188820df04156c",
+    "off/mesh.py": "66625dbe31b464a143c50e65267ab3530f4cee02edfb961a3f86ce450b30b670",
+    "off/mesh_assistant.py": "6ed8e365a1a23008684f9cbf7fa01ee9931dcc9df80c8653aa88af3065c9c9ab",
+    "off/meshmetrics.py": "ad126ba0cbb4698394e81e2cda84163b05d62fba481d119bebfb0c7b32927750",
+    "off/models.py": "c7547636279adde1d6597054c75bfac86c566b15193e1d963dea4ed5416aa7eb",
+    "off/numeric_controls.py": "234abef69e4032817b605af5e9cd1a7d89b7f76cfabb0468ea731b0ddc5783b8",
+    "off/physics.py": "a8459deb1f6e18e3351b2ae927dbbec2f67fa564552cb29c4c460610fed089bb",
+    "off/post.py": "a2893b4183e622622ce2e879db305846dcfaa5cfd8e7b9dbe3575208ad090f02",
+    "off/process_control.py": "4162f8bb41220d8c664515868e7e63b4c16c6cf8402b92d32ea711c613af30dd",
+    "off/quality.py": "d80abf48e66db5e6ccbfc5bc9ff241005a2c5cfe7705ef92af49ed30db7b772e",
+    "off/remote_status.py": "b94f3a002ce2e0b9425f7bce1c315e4601b733bbaaaa683b8197df8191b96692",
+    "off/reynolds.py": "e25b391847b11be5c77a2f3d8227d7289dc459be48e10898b9caf32fc543e554",
+    "off/reynolds_gui.py": "3ef2d9ae80a7fc50fc86b2e49c95ea94e357ef75939bc66004589a9f0e959dee",
+    "off/spectra.py": "709a8479ef404bd5fbac84b01a165b5e076abdcabba3f0fa979c1d17b93eeb0a",
+    "off/ssh_backend.py": "f67a604e8498e214c3f77d190cc872465f7388cbdd2c9824c820dc19ab90571b",
+    "off/ssh_gui.py": "b8c773b8cd4b76e44832f62bbd3ccc38a252975031e2a38ef1635448cc28ba44",
+    "off/tool_icons.py": "abbdff1f1aec3483a61a32d85ef7685e4cf3a7a798ceb13bd709c969bbd9e778",
+    "off/viewer.py": "8df2138b4c18027bdcbbffa7bae261656dcea76453dbeab2abcd53e80e609abd",
+    "off/workbench.py": "7340cd6e5e21012189f3b94ea7757886c6528e5d0cd5436fdeed8672ef3d0c0c",
+    "off/workspace_tools.py": "48fdef11b036044d077afdf0c6f44143941a465a6bd538300b0384b25795547c"
+  },
+  "retained_failures": [
+    "advisor_integration_initial_attempt.json",
+    "model_runtime_first_attempt_current_release.json"
+  ],
+  "scope": "Five sequential review stages with corrections; final integration and retained failures are separate from passing targeted checks.",
+  "additional_long_test_fix": "Standalone Viewer canonical field/slice data initialized in constructor; unknown/empty slice safely displays full volume. Original Round1 postprocessing failure retained in eight_long_runs ledger; genuine completed fields reopened and retested."
+}

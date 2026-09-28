@@ -1,0 +1,40 @@
+{
+  "tests": [
+    {
+      "test": "validate_upgrade.py",
+      "exit_code": 0,
+      "elapsed_s": 70.82
+    },
+    {
+      "test": "validate_workbench.py",
+      "exit_code": 0,
+      "elapsed_s": 9.54,
+      "retested": true,
+      "real_case": {
+        "name": "OFF_GUIDED_20260928_025326",
+        "state": "DONE",
+        "cores": 4,
+        "cells": 5120.0,
+        "end_time_s": 0.07,
+        "saved_frames": 8
+      },
+      "correction": "Exclude deliberately hidden duplicate region QAction from enabled-state test; process Qt events while yielding Python worker execution. Explicit block dictionary edit now invalidates guide mesh match, and guide mesh step opens Meshing."
+    },
+    {
+      "test": "validate_2d_pipeline.py",
+      "exit_code": 0,
+      "elapsed_s": 7.54
+    },
+    {
+      "test": "validate_workspace_upgrade.py",
+      "exit_code": 0,
+      "elapsed_s": 9.6
+    },
+    {
+      "test": "validate_checkpoint.py",
+      "exit_code": 0,
+      "elapsed_s": 23.88
+    }
+  ],
+  "errors": []
+}

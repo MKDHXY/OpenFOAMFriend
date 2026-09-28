@@ -1,0 +1,19 @@
+{
+  "release": "v20260928_114827",
+  "round": 2,
+  "empty_Gmsh_region_explained": true,
+  "actual_mouse_region_draw_select_apply": {
+    "x": 2.006751054852321,
+    "y": 2.006751054852321,
+    "width": 2.006751054852321,
+    "height": 2.006751054852321,
+    "size": 0.4,
+    "direction": "y-",
+    "ratio": 0.5
+  },
+  "original_generator_and_spacing_dialogs_accessible": [
+    "网格间距 / 单调渐变",
+    "手动网格参数"
+  ],
+  "errors": []
+}

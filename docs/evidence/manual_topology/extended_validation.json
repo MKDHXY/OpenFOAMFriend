@@ -1,0 +1,76 @@
+{
+  "release": "v20260928_164718",
+  "real_mouse_rectangle_circle_polyline": true,
+  "real_Gmsh_hole_and_2D_triangle": true,
+  "region_12x8_and_6x8_real_cells": true,
+  "real_monotone_grading_ratio": 2,
+  "manual_edits_invalidate_mesh_evidence": true,
+  "legacy_schema1_readable": true,
+  "meshes": [
+    {
+      "name": "OFF_MANUAL_HOLE_20260928_171213",
+      "dimension": 3,
+      "cells": 1712.0,
+      "quality": {
+        "cells": 1712.0,
+        "aspect_ratio": 7.420845132,
+        "non_orthogonality": 45.45032779,
+        "skewness": 1.24522309,
+        "passed": true,
+        "log": "\\\\wsl.localhost\\OFFPackageQA_20260928_164718\\home\\off\\OpenFOAM\\off14\\run\\OFF_MANUAL_HOLE_20260928_171213\\log.checkMesh",
+        "sets": []
+      },
+      "case": "\\\\wsl.localhost\\OFFPackageQA_20260928_164718\\home\\off\\OpenFOAM\\off14\\run\\OFF_MANUAL_HOLE_20260928_171213",
+      "passes_project_limits": false
+    },
+    {
+      "name": "OFF_MANUAL_TRIANGLE_2D_20260928_171215",
+      "dimension": 2,
+      "cells": 78.0,
+      "quality": {
+        "cells": 78.0,
+        "aspect_ratio": 4.698682114,
+        "non_orthogonality": 48.93041908,
+        "skewness": 1.350894531,
+        "passed": true,
+        "log": "\\\\wsl.localhost\\OFFPackageQA_20260928_164718\\home\\off\\OpenFOAM\\off14\\run\\OFF_MANUAL_TRIANGLE_2D_20260928_171215\\log.checkMesh",
+        "sets": []
+      },
+      "case": "\\\\wsl.localhost\\OFFPackageQA_20260928_164718\\home\\off\\OpenFOAM\\off14\\run\\OFF_MANUAL_TRIANGLE_2D_20260928_171215",
+      "passes_project_limits": false
+    },
+    {
+      "name": "OFF_MANUAL_REGIONS_2D_20260928_171216",
+      "dimension": 2,
+      "cells": 144.0,
+      "quality": {
+        "cells": 144.0,
+        "aspect_ratio": 2.171862027,
+        "non_orthogonality": 0.0,
+        "skewness": 5.630677117e-15,
+        "passed": true,
+        "log": "\\\\wsl.localhost\\OFFPackageQA_20260928_164718\\home\\off\\OpenFOAM\\off14\\run\\OFF_MANUAL_REGIONS_2D_20260928_171216\\log.checkMesh",
+        "sets": []
+      },
+      "case": "\\\\wsl.localhost\\OFFPackageQA_20260928_164718\\home\\off\\OpenFOAM\\off14\\run\\OFF_MANUAL_REGIONS_2D_20260928_171216",
+      "passes_project_limits": true
+    },
+    {
+      "name": "OFF_MANUAL_REGIONS_3D_20260928_171217",
+      "dimension": 3,
+      "cells": 576.0,
+      "quality": {
+        "cells": 576.0,
+        "aspect_ratio": 2.666666667,
+        "non_orthogonality": 0.0,
+        "skewness": 2.040708477e-14,
+        "passed": true,
+        "log": "\\\\wsl.localhost\\OFFPackageQA_20260928_164718\\home\\off\\OpenFOAM\\off14\\run\\OFF_MANUAL_REGIONS_3D_20260928_171217\\log.checkMesh",
+        "sets": []
+      },
+      "case": "\\\\wsl.localhost\\OFFPackageQA_20260928_164718\\home\\off\\OpenFOAM\\off14\\run\\OFF_MANUAL_REGIONS_3D_20260928_171217",
+      "passes_project_limits": true
+    }
+  ],
+  "errors": []
+}

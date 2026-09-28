@@ -1,0 +1,19 @@
+{
+  "release": "v20260928_164718",
+  "actual_keyboard_and_mouse": true,
+  "project_preserved": true,
+  "language_persisted": true,
+  "rows": [
+    {
+      "language": "en",
+      "label": "Continue workspace",
+      "main_language": "en"
+    },
+    {
+      "language": "zh",
+      "label": "\u8fdb\u5165\u5de5\u4f5c\u53f0",
+      "main_language": "zh"
+    }
+  ],
+  "errors": []
+}

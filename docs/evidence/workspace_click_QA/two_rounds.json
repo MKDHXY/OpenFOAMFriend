@@ -1,0 +1,305 @@
+{
+  "release": "v20260928_164718",
+  "two_engineer_rounds_passed": true,
+  "real_mouse_navigation": [
+    {
+      "round": 1,
+      "from_stage": 0,
+      "guided": false,
+      "kind": "nav",
+      "route": "physics",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 0,
+      "guided": false,
+      "kind": "nav_detail",
+      "route": "physics",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 0,
+      "guided": false,
+      "kind": "nav",
+      "route": "solver",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 0,
+      "guided": false,
+      "kind": "nav_detail",
+      "route": "solver",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 0,
+      "guided": false,
+      "kind": "nav",
+      "route": "results",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 0,
+      "guided": false,
+      "kind": "nav_detail",
+      "route": "results",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 1,
+      "guided": false,
+      "kind": "nav",
+      "route": "physics",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 1,
+      "guided": false,
+      "kind": "nav_detail",
+      "route": "physics",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 1,
+      "guided": false,
+      "kind": "nav",
+      "route": "solver",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 1,
+      "guided": false,
+      "kind": "nav_detail",
+      "route": "solver",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 1,
+      "guided": false,
+      "kind": "nav",
+      "route": "results",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 1,
+      "guided": false,
+      "kind": "nav_detail",
+      "route": "results",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 2,
+      "guided": false,
+      "kind": "nav",
+      "route": "physics",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 2,
+      "guided": false,
+      "kind": "nav_detail",
+      "route": "physics",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 2,
+      "guided": false,
+      "kind": "nav",
+      "route": "solver",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 2,
+      "guided": false,
+      "kind": "nav_detail",
+      "route": "solver",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 2,
+      "guided": false,
+      "kind": "nav",
+      "route": "results",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 2,
+      "guided": false,
+      "kind": "nav_detail",
+      "route": "results",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 0,
+      "guided": true,
+      "kind": "nav",
+      "route": "physics",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 0,
+      "guided": true,
+      "kind": "nav_detail",
+      "route": "physics",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 0,
+      "guided": true,
+      "kind": "nav",
+      "route": "solver",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 0,
+      "guided": true,
+      "kind": "nav_detail",
+      "route": "solver",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 0,
+      "guided": true,
+      "kind": "nav",
+      "route": "results",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 0,
+      "guided": true,
+      "kind": "nav_detail",
+      "route": "results",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 1,
+      "guided": true,
+      "kind": "nav",
+      "route": "physics",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 1,
+      "guided": true,
+      "kind": "nav_detail",
+      "route": "physics",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 1,
+      "guided": true,
+      "kind": "nav",
+      "route": "solver",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 1,
+      "guided": true,
+      "kind": "nav_detail",
+      "route": "solver",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 1,
+      "guided": true,
+      "kind": "nav",
+      "route": "results",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 1,
+      "guided": true,
+      "kind": "nav_detail",
+      "route": "results",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 2,
+      "guided": true,
+      "kind": "nav",
+      "route": "physics",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 2,
+      "guided": true,
+      "kind": "nav_detail",
+      "route": "physics",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 2,
+      "guided": true,
+      "kind": "nav",
+      "route": "solver",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 2,
+      "guided": true,
+      "kind": "nav_detail",
+      "route": "solver",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 2,
+      "guided": true,
+      "kind": "nav",
+      "route": "results",
+      "result": "PASS"
+    },
+    {
+      "round": 1,
+      "from_stage": 2,
+      "guided": true,
+      "kind": "nav_detail",
+      "route": "results",
+      "result": "PASS"
+    }
+  ],
+  "summary_parent_keyboard_double_click": true,
+  "manual_hidden_floating_dock_recovery": true,
+  "no_data_has_explicit_disabled_actions": true,
+  "real_keyboard_apply_to_dictionaries": true,
+  "parameter_save_load": true,
+  "invalid_co_rejected": true,
+  "unapplied_draft_preserved": true,
+  "model_changed_initial_fields": true,
+  "explicit_override_conflict_reported": true,
+  "pimple_invalidates_physics_not_mesh": true,
+  "errors": []
+}

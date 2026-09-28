@@ -1,0 +1,14 @@
+{
+  "freeze_actual_range": [
+    -0.8472965955734253,
+    0.5705443024635315
+  ],
+  "fixed_across_all_frames": true,
+  "independent_field_settings": true,
+  "palette_reverse": true,
+  "orientation_title_ticks_format": true,
+  "persisted_settings_reload": true,
+  "actual_PNG_and_GIF": true,
+  "invalid_log_layout_ranges_rejected": true,
+  "errors": []
+}

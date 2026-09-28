@@ -1,0 +1,35 @@
+{
+  "real_2D_solver": "DONE",
+  "cells": 1280,
+  "cores": 4,
+  "genuine_frames": 3,
+  "end_s": 0.02,
+  "unique_z_layers": 1,
+  "finite_MAT": true,
+  "quality": {
+    "cells": 1280,
+    "faces": 5184,
+    "internal_faces": 2496,
+    "max_skewness": 0.013228462401531717,
+    "max_nonorthogonality_deg": 1.4787793334710982e-06,
+    "skew_above_limit": 0,
+    "nonortho_above_limit": 0,
+    "min_cell_volume": 0.0038039099143715818,
+    "nonpositive_cells": 0,
+    "worst_skew_face": 606,
+    "worst_skew_xyz": [
+      0.0,
+      0.5361892901653059,
+      0.0
+    ],
+    "worst_nonortho_face": 309,
+    "worst_nonortho_xyz": [
+      1.352717108247345,
+      1.22603132154376,
+      0.0
+    ],
+    "source": "OpenFOAM-14 meshCheck formulas; independently calculated from ASCII polyMesh"
+  },
+  "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_2D_20260928_024540",
+  "errors": []
+}

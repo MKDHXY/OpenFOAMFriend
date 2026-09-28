@@ -1,0 +1,51 @@
+{
+  "release": "v20260928_114827",
+  "two_rounds_passed": true,
+  "rounds": [
+    {
+      "round": 1,
+      "release": "v20260928_113815",
+      "defects": [
+        "Original 0.12 generator and refinement tree rows had no UserRole or click route.",
+        "First fixed panel scrolled its heading/tabs out of view; irrelevant radial coordinate rows remained visible.",
+        "Some refinement labels and advanced-dialog labels did not retranslate."
+      ],
+      "repairs": [
+        "Single-click and double-click routes to editable generator/refinement inspector.",
+        "Second iteration fixes header/tabs and hides irrelevant local coordinates.",
+        "All property labels translate; unapplied values survive language/page switching."
+      ],
+      "mouse_routes_passed": 12,
+      "three_actual_3D_4_rank_pipelines": true,
+      "harness_note": "Initial standalone QTest double-click lacked the preceding physical click; corrected harness passed. This was not a solver/software defect."
+    },
+    {
+      "round": 2,
+      "release": "v20260928_114827",
+      "checks": [
+        "12 routes from three stages in Guided/Expert modes",
+        "Single and double clicks; toolbar routes",
+        "Hidden/floating dock restoration",
+        "Generator edit and actual Generate/check => 5376 cells",
+        "Invalid circumferential count visibly rejected",
+        "Bilingual labels and unsaved drafts",
+        "Gmsh empty region, two-click drawing, y- decreasing ratio=0.5 applied",
+        "Original advanced generator/spacing dialogs accessible",
+        "Three fresh actual 5120-cell four-rank 3D pipelines plus guided solve",
+        "11 regression suites and generated-file override checks"
+      ],
+      "mouse_routes_passed": 12,
+      "three_actual_3D_4_rank_pipelines": true,
+      "result": "PASS"
+    }
+  ],
+  "first_source_sha256": {
+    "off/gui.py": "ed16af9e65b7282a7bb470c39deadc2984c520d00fa5fcfd14d232a15e03c836",
+    "off/mesh_inspector.py": "c1296f7597dbc91562ee5b2258e9d662aa15bdfd9c2bf0132be22a19637d1204"
+  },
+  "current_source_sha256": {
+    "off/gui.py": "ed16af9e65b7282a7bb470c39deadc2984c520d00fa5fcfd14d232a15e03c836",
+    "off/mesh_inspector.py": "8d59c59d77c9b9cc61f74d4b3204903b5e966d56acaaf0ab978c58d932c8d256"
+  },
+  "errors": []
+}

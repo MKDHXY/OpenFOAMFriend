@@ -1,0 +1,19 @@
+name: Bug report / 问题反馈
+description: Reproducible software or solver issue / 可复现的软件或求解问题
+title: "[Bug] "
+body:
+  - type: input
+    id: version
+    attributes: {label: "Version / 版本", placeholder: "0.17.0 FULL/LITE"}
+    validations: {required: true}
+  - type: textarea
+    id: environment
+    attributes: {label: "Environment / 环境", description: "Windows build, CPU/GPU, WSL distro, OpenFOAM version. Do not include credentials."}
+    validations: {required: true}
+  - type: textarea
+    id: reproduce
+    attributes: {label: "Steps and expected/actual behavior / 步骤与预期实际表现"}
+    validations: {required: true}
+  - type: textarea
+    id: evidence
+    attributes: {label: "Logs and evidence / 日志证据", description: "Remove tokens, passwords and private paths. For CFD include cells, ranks, time, Co and failure lines."}

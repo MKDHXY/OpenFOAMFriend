@@ -1,0 +1,30 @@
+{
+  "release": "v20260928_131031",
+  "version": "0.16.0",
+  "fresh_validation": [
+    "manual_context/QA.json",
+    "workspace_click_QA/two_rounds.json",
+    "workspace_click_QA/pipeline_validation.json",
+    "workspace_click_QA/runtime_audit.json",
+    "regression_fast.json",
+    "manual_topology/final_drafting_QA.json",
+    "input_access_validation.json",
+    "navigation_click_QA/round2.json",
+    "workbench_validation.json",
+    "docking_ssh_validation.json"
+  ],
+  "fresh_runs": "Three fresh 5120-cell / four-rank 3D cases; real MAT/CSV/GIF/complete .foam exports rechecked from the same completed cases after GUI-only fixes. Separate fresh guided solve.",
+  "retained_historical": {
+    "0.15": "workspace_navigation docs are retained feature documentation from v20260928_124240; bindings were freshly retested here",
+    "0.14": "Full manual topology, extended mesh tests and initial validation.json remain historical v20260928_120205",
+    "0.12": "Eight 10-second runs remain historical; not rerun here",
+    "other": "Evidence not listed fresh retains its original test scope"
+  },
+  "limitations": [
+    "Planar topology with 3D extrusion; arbitrary CAD not implemented",
+    "Short calculations validate integration, not mesh/timestep/physical convergence",
+    "Live remote cluster execution is not verified",
+    "References do not automatically alter active topology; import rectangular bounds explicitly or use cylinder blocks for circular domain"
+  ],
+  "errors": []
+}

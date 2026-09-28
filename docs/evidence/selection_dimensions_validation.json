@@ -1,0 +1,21 @@
+{
+  "pointer_object_selection": true,
+  "pointer_label_selection": true,
+  "selection_survives_language_refresh": true,
+  "selection_no_undo_entry": true,
+  "explicit_2D_3D_controls": true,
+  "2D_one_empty_layer": true,
+  "3D_volume_boundary": true,
+  "actual_extrusion_bounds_m": [
+    -0.5,
+    0.5,
+    -0.5,
+    0.5,
+    -1.25,
+    1.25
+  ],
+  "3D_pointer_pick_sync": true,
+  "XY_drawing_preserved": true,
+  "scope": "XY sketches extruded along Z; no arbitrary 3D CAD/booleans claimed",
+  "errors": []
+}

@@ -1,0 +1,81 @@
+{
+  "release": "v20260928_131031",
+  "max_reserved_ranks_from_intervals": 4,
+  "actual_intervals": [
+    {
+      "case": "OFF_BINDING_R1_20260928_131735",
+      "start_unix_s": 1790565461,
+      "end_unix_s": 1790565464,
+      "ranks": 4
+    },
+    {
+      "case": "OFF_BINDING_R2_20260928_131735",
+      "start_unix_s": 1790565466,
+      "end_unix_s": 1790565470,
+      "ranks": 4
+    },
+    {
+      "case": "OFF_BINDING_R3_20260928_131735",
+      "start_unix_s": 1790565472,
+      "end_unix_s": 1790565477,
+      "ranks": 4
+    }
+  ],
+  "cases": [
+    {
+      "case": "OFF_BINDING_R1_20260928_131735",
+      "processor_directories": 4,
+      "actual_times": [
+        0.0,
+        0.01,
+        0.02,
+        0.03,
+        0.04
+      ],
+      "MAT_rows": 25600,
+      "sha256": {
+        "fields.csv": "fd071f5594dde7071834bf9f9c373e82c25473f7cc2bc37b5ae34210a8f9de44",
+        "fields.gif": "0a53eec2856f5ac84140286dcf048c8f696ccec2ed760055e66601358bdefa0d",
+        "PINN.mat": "a3fa12541c2c8c007565522963343659069285d7f0846d11eca9f77b3931c9b1",
+        "pressure.png": "0dc08d1d170a43eed37df5faae0355fa42ce7c9d5e484be918be3ca7a88b96c8"
+      }
+    },
+    {
+      "case": "OFF_BINDING_R2_20260928_131735",
+      "processor_directories": 4,
+      "actual_times": [
+        0.0,
+        0.02,
+        0.04,
+        0.06
+      ],
+      "MAT_rows": 20480,
+      "sha256": {
+        "fields.csv": "e67e98ceabe20dd7baa6eb0fc0c83b5a90333c25aff2035c911b4f32446dd98c",
+        "fields.gif": "c7f4f6c895fae84bb6371b71d72540b31ca15395000458f6ed1c8cac90852cc6",
+        "PINN.mat": "92b6bddec798e1faff447512add299fe5c30505123941373364f35102cc8c63c",
+        "pressure.png": "9ef6bd8203a85e0e4fbfe31472c040148d8d1b0d564a47fcc01bedc243132e53"
+      }
+    },
+    {
+      "case": "OFF_BINDING_R3_20260928_131735",
+      "processor_directories": 4,
+      "actual_times": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1
+      ],
+      "MAT_rows": 30720,
+      "sha256": {
+        "fields.csv": "4ec345b5d8ce7bd7bb158175bbbae31250197b6665dc068bbde12f9d6dddb6bf",
+        "fields.gif": "3c253d97dd12864c03681c8993d43db0c90067883e8c71c6b5e2dcbec5bc5d0d",
+        "PINN.mat": "f807e18251da3fa452c96d7d75f8862c8efe69396270a308ba5ce53fae149ac8",
+        "pressure.png": "0dc08d1d170a43eed37df5faae0355fa42ce7c9d5e484be918be3ca7a88b96c8"
+      }
+    }
+  ],
+  "errors": []
+}

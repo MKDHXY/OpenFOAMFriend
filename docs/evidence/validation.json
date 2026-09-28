@@ -1,0 +1,137 @@
+{
+  "release": "v20260928_120205",
+  "three_rounds_passed": true,
+  "max_reserved_cores": 4,
+  "pause_resume": {
+    "before": 0.0075,
+    "after_1p5_seconds": 0.0075,
+    "signal_result": "{\"signal\": \"STOP\", \"verified_case\": \"/home/developer/OpenFOAM/developer14/run/OFF_RELEASE_R3_20260928_122043\", \"pids\": [3007, 3013, 3014, 3015, 3016]}"
+  },
+  "gui_sketch_draw_undo_regions": true,
+  "rounds": [
+    {
+      "round": 1,
+      "case": "OFF_RELEASE_R1_20260928_122043",
+      "state": "DONE",
+      "cores": 4,
+      "cells": 5120,
+      "solver_end_s": 0.05,
+      "genuine_frames": 6,
+      "mat_shape": [
+        30720,
+        8
+      ],
+      "finite": true,
+      "quality": {
+        "cells": 5120,
+        "faces": 16896,
+        "internal_faces": 13824,
+        "max_skewness": 0.013228462401548268,
+        "max_nonorthogonality_deg": 1.7075472925031877e-06,
+        "skew_above_limit": 0,
+        "nonortho_above_limit": 0,
+        "min_cell_volume": 0.0009509774785928945,
+        "nonpositive_cells": 0,
+        "worst_skew_face": 2835,
+        "worst_skew_xyz": [
+          0.0,
+          0.5361892901653059,
+          0.125
+        ],
+        "worst_nonortho_face": 7488,
+        "worst_nonortho_xyz": [
+          -1.2260313215437602,
+          -1.3527171082473453,
+          -0.375
+        ],
+        "source": "OpenFOAM-14 meshCheck formulas; independently calculated from ASCII polyMesh"
+      },
+      "solver_elapsed_seconds": 3,
+      "vtk_file_count": 36,
+      "case_folder": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_RELEASE_R1_20260928_122043"
+    },
+    {
+      "round": 2,
+      "case": "OFF_RELEASE_R2_20260928_122043",
+      "state": "DONE",
+      "cores": 4,
+      "cells": 5120,
+      "solver_end_s": 0.08,
+      "genuine_frames": 5,
+      "mat_shape": [
+        25600,
+        8
+      ],
+      "finite": true,
+      "quality": {
+        "cells": 5120,
+        "faces": 16896,
+        "internal_faces": 13824,
+        "max_skewness": 0.013228462401548268,
+        "max_nonorthogonality_deg": 1.7075472925031877e-06,
+        "skew_above_limit": 0,
+        "nonortho_above_limit": 0,
+        "min_cell_volume": 0.0009509774785928945,
+        "nonpositive_cells": 0,
+        "worst_skew_face": 2835,
+        "worst_skew_xyz": [
+          0.0,
+          0.5361892901653059,
+          0.125
+        ],
+        "worst_nonortho_face": 7488,
+        "worst_nonortho_xyz": [
+          -1.2260313215437602,
+          -1.3527171082473453,
+          -0.375
+        ],
+        "source": "OpenFOAM-14 meshCheck formulas; independently calculated from ASCII polyMesh"
+      },
+      "solver_elapsed_seconds": 4,
+      "vtk_file_count": 30,
+      "case_folder": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_RELEASE_R2_20260928_122043"
+    },
+    {
+      "round": 3,
+      "case": "OFF_RELEASE_R3_20260928_122043",
+      "state": "DONE",
+      "cores": 4,
+      "cells": 5120,
+      "solver_end_s": 1.0,
+      "genuine_frames": 11,
+      "mat_shape": [
+        56320,
+        8
+      ],
+      "finite": true,
+      "quality": {
+        "cells": 5120,
+        "faces": 16896,
+        "internal_faces": 13824,
+        "max_skewness": 0.013228462401548268,
+        "max_nonorthogonality_deg": 1.7075472925031877e-06,
+        "skew_above_limit": 0,
+        "nonortho_above_limit": 0,
+        "min_cell_volume": 0.0009509774785928945,
+        "nonpositive_cells": 0,
+        "worst_skew_face": 2835,
+        "worst_skew_xyz": [
+          0.0,
+          0.5361892901653059,
+          0.125
+        ],
+        "worst_nonortho_face": 7488,
+        "worst_nonortho_xyz": [
+          -1.2260313215437602,
+          -1.3527171082473453,
+          -0.375
+        ],
+        "source": "OpenFOAM-14 meshCheck formulas; independently calculated from ASCII polyMesh"
+      },
+      "solver_elapsed_seconds": 34,
+      "vtk_file_count": 66,
+      "case_folder": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_RELEASE_R3_20260928_122043"
+    }
+  ],
+  "errors": []
+}

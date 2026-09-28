@@ -1,0 +1,14 @@
+{
+  "release": "v20260928_164718",
+  "two_engineer_rounds": true,
+  "reference_visible_without_mutating_mesh": true,
+  "import_actual_boundary_loops": true,
+  "idempotent_import_and_undo": true,
+  "offcentre_SI_cylinder_template": true,
+  "three_polygon_solids_are_holes": true,
+  "six_guide_steps_do_not_switch_workspace": true,
+  "four_setting_routes_embedded_no_modal": true,
+  "guide_persists_after_settings_poll_and_language": true,
+  "domain_apply_preserves_draft": true,
+  "errors": []
+}

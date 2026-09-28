@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this software when using it in your research."
+title: "OpenFOAM Friend"
+type: software
+version: "0.17.0"
+date-released: 2026-09-28
+authors:
+  - name: "zongxuan"
+  - name: "hanwen"
+repository-code: "https://github.com/MKDHXY/OpenFOAMFriend"
+url: "https://mkdhxy.github.io/OpenFOAMFriend/"
+license: GPL-3.0-or-later

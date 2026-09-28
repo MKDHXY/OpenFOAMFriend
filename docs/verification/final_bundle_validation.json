@@ -1,0 +1,49 @@
+{
+  "rows": [
+    {
+      "mode": "full",
+      "manifest_verified": true,
+      "isolated_runtime_imports": true,
+      "bundled_SSH_client_exists": true,
+      "actual_welcome_in_staged_app": "Welcome bilingual PASS",
+      "runtime": "D:\\OpenFOAMFriend\\packages\\v20260928_164718\\OpenFoamFriend_FULL_v20260928_164718\\runtime\\python.exe"
+    },
+    {
+      "mode": "lite",
+      "manifest_verified": true,
+      "isolated_runtime_imports": true,
+      "bundled_SSH_client_exists": true,
+      "actual_welcome_in_staged_app": "Welcome bilingual PASS",
+      "runtime": "D:\\OpenFOAMFriend\\packages\\v20260928_164718\\OpenFoamFriend_LITE_v20260928_164718\\runtime\\python.exe"
+    }
+  ],
+  "final_full_installer_with_profile_verified": true,
+  "existing_profile_backup": true,
+  "full_record": {
+    "mode": "full",
+    "release": "v20260928_164718",
+    "distro": "OFFPackageInstallerQA_20260928_164718",
+    "environment": {
+      "windows": "Windows-10-10.0.19045-SP0",
+      "architecture": "AMD64",
+      "python": "D:\\OpenFOAMFriend\\installer_cache\\portable_runtime\\python.exe",
+      "wsl_present": true,
+      "distributions": [
+        "Ubuntu",
+        "OFFPackageQA_20260928_164718",
+        "OFFPackageBuild_20260928_164718",
+        "OFFPackageInstallerQA_20260928_164718"
+      ],
+      "ready": true,
+      "errors": [],
+      "distro": "OFFPackageInstallerQA_20260928_164718",
+      "bashrc": "/opt/openfoam14/etc/bashrc",
+      "user": "off",
+      "home": "/home/off",
+      "probe": "/opt/openfoam14/platforms/linux64GccDPInt32Opt/bin/foamRun\n/opt/openfoam14/platforms/linux64GccDPInt32Opt/bin/blockMesh\n/opt/openfoam14/platforms/linux64GccDPInt32Opt/bin/gmshToFoam\n/usr/bin/mpirun\n14\noff\n/home/off",
+      "foam_version": "14"
+    },
+    "installed": true,
+    "completed": "2026-09-28 17:19:10"
+  }
+}

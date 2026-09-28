@@ -1,0 +1,19 @@
+{
+  "actual_mouse_keyboard": true,
+  "rows": [
+    {
+      "mode": "full",
+      "languages_verified": true,
+      "windows_action_visible": true,
+      "progress_and_disabled_feedback": true,
+      "read_only_missing_report": true
+    },
+    {
+      "mode": "lite",
+      "languages_verified": true,
+      "windows_action_visible": false,
+      "progress_and_disabled_feedback": true,
+      "read_only_missing_report": true
+    }
+  ]
+}

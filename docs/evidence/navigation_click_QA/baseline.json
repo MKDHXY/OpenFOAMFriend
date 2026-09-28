@@ -1,0 +1,18 @@
+{
+  "source_release": "v20260928_023043",
+  "real_mouse_clicks": [
+    {
+      "row": "生成器：blockMesh · 结构圆柱 O 型网格",
+      "user_role": null,
+      "stage_after_single_click": 2,
+      "no_route": true
+    },
+    {
+      "row": "加密 / 间距区域（控制参数，不是已生成单元）",
+      "user_role": null,
+      "stage_after_single_click": 2,
+      "no_route": true
+    }
+  ],
+  "defect_confirmed": true
+}

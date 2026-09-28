@@ -1,0 +1,758 @@
+{
+  "release": "v20260928_023043",
+  "stamp": "20260928_025430",
+  "rounds": [
+    {
+      "round": 1,
+      "result": "PASS",
+      "purpose": "Baseline 3D laminar pipeline",
+      "model": "laminar",
+      "Re": 200,
+      "cells": 5120,
+      "cores": 4,
+      "end_time_s": 10.0,
+      "max_internal_dt_s": 0.005,
+      "max_observed_Co": 0.1785045392,
+      "genuine_frames": 21,
+      "field_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        5.0,
+        5.5,
+        6.0,
+        6.5,
+        7.0,
+        7.5,
+        8.0,
+        8.5,
+        9.0,
+        9.5,
+        10.0
+      ],
+      "required_fields": [
+        "U",
+        "p"
+      ],
+      "finite_all_fields_all_frames": true,
+      "field_extrema": {
+        "U": {
+          "min": -0.7459334135055542,
+          "max": 1.6385072469711304
+        },
+        "p": {
+          "min": -1.0445377826690674,
+          "max": 0.5706902742385864
+        }
+      },
+      "quality": {
+        "cells": 5120,
+        "faces": 16896,
+        "internal_faces": 13824,
+        "max_skewness": 0.013228462401548268,
+        "max_nonorthogonality_deg": 1.7075472925031877e-06,
+        "skew_above_limit": 0,
+        "nonortho_above_limit": 0,
+        "min_cell_volume": 0.0009509774785928945,
+        "nonpositive_cells": 0,
+        "worst_skew_face": 2835,
+        "worst_skew_xyz": [
+          0.0,
+          0.5361892901653059,
+          0.125
+        ],
+        "worst_nonortho_face": 7488,
+        "worst_nonortho_xyz": [
+          -1.2260313215437602,
+          -1.3527171082473453,
+          -0.375
+        ],
+        "source": "OpenFOAM-14 meshCheck formulas; independently calculated from ASCII polyMesh"
+      },
+      "mat_3d_shape": [
+        107520,
+        8
+      ],
+      "force_samples": 2001,
+      "solver_elapsed_s": 34,
+      "pause_resume": null,
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_LONG_QA_R1_20260928_025430",
+      "exports": "D:\\UoM\\openfoamfriend\\v20260928_023043\\evidence\\eight_long_runs\\round1",
+      "review": "No pipeline defect observed in this round. Physical model/mesh adequacy remains unverified."
+    },
+    {
+      "round": 2,
+      "result": "PASS",
+      "purpose": "Diffusion-dominated Re1 endpoint",
+      "model": "laminar",
+      "Re": 1,
+      "cells": 5120,
+      "cores": 4,
+      "end_time_s": 10.0,
+      "max_internal_dt_s": 0.005,
+      "max_observed_Co": 0.1242644428,
+      "genuine_frames": 21,
+      "field_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        5.0,
+        5.5,
+        6.0,
+        6.5,
+        7.0,
+        7.5,
+        8.0,
+        8.5,
+        9.0,
+        9.5,
+        10.0
+      ],
+      "required_fields": [
+        "U",
+        "p"
+      ],
+      "finite_all_fields_all_frames": true,
+      "field_extrema": {
+        "U": {
+          "min": -0.33689701557159424,
+          "max": 1.2044965028762817
+        },
+        "p": {
+          "min": -2.661377429962158,
+          "max": 3.4918053150177
+        }
+      },
+      "quality": {
+        "cells": 5120,
+        "faces": 16896,
+        "internal_faces": 13824,
+        "max_skewness": 0.013228462401548268,
+        "max_nonorthogonality_deg": 1.7075472925031877e-06,
+        "skew_above_limit": 0,
+        "nonortho_above_limit": 0,
+        "min_cell_volume": 0.0009509774785928945,
+        "nonpositive_cells": 0,
+        "worst_skew_face": 2835,
+        "worst_skew_xyz": [
+          0.0,
+          0.5361892901653059,
+          0.125
+        ],
+        "worst_nonortho_face": 7488,
+        "worst_nonortho_xyz": [
+          -1.2260313215437602,
+          -1.3527171082473453,
+          -0.375
+        ],
+        "source": "OpenFOAM-14 meshCheck formulas; independently calculated from ASCII polyMesh"
+      },
+      "mat_3d_shape": [
+        107520,
+        8
+      ],
+      "force_samples": 2001,
+      "solver_elapsed_s": 37,
+      "pause_resume": null,
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_LONG_QA_R2_20260928_025430",
+      "exports": "D:\\UoM\\openfoamfriend\\v20260928_023043\\evidence\\eight_long_runs\\round2",
+      "review": "No pipeline defect observed in this round. Physical model/mesh adequacy remains unverified."
+    },
+    {
+      "round": 3,
+      "result": "PASS",
+      "purpose": "Finer internal dt and real pause/continue",
+      "model": "laminar",
+      "Re": 200,
+      "cells": 5120,
+      "cores": 4,
+      "end_time_s": 10.0,
+      "max_internal_dt_s": 0.0025,
+      "max_observed_Co": 0.0900241535,
+      "genuine_frames": 21,
+      "field_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        5.0,
+        5.5,
+        6.0,
+        6.5,
+        7.0,
+        7.5,
+        8.0,
+        8.5,
+        9.0,
+        9.5,
+        10.0
+      ],
+      "required_fields": [
+        "U",
+        "p"
+      ],
+      "finite_all_fields_all_frames": true,
+      "field_extrema": {
+        "U": {
+          "min": -0.7422699332237244,
+          "max": 1.6404064893722534
+        },
+        "p": {
+          "min": -1.0450410842895508,
+          "max": 0.570955216884613
+        }
+      },
+      "quality": {
+        "cells": 5120,
+        "faces": 16896,
+        "internal_faces": 13824,
+        "max_skewness": 0.013228462401548268,
+        "max_nonorthogonality_deg": 1.7075472925031877e-06,
+        "skew_above_limit": 0,
+        "nonortho_above_limit": 0,
+        "min_cell_volume": 0.0009509774785928945,
+        "nonpositive_cells": 0,
+        "worst_skew_face": 2835,
+        "worst_skew_xyz": [
+          0.0,
+          0.5361892901653059,
+          0.125
+        ],
+        "worst_nonortho_face": 7488,
+        "worst_nonortho_xyz": [
+          -1.2260313215437602,
+          -1.3527171082473453,
+          -0.375
+        ],
+        "source": "OpenFOAM-14 meshCheck formulas; independently calculated from ASCII polyMesh"
+      },
+      "mat_3d_shape": [
+        107520,
+        8
+      ],
+      "force_samples": 4001,
+      "solver_elapsed_s": 64,
+      "pause_resume": {
+        "before_s": 0.135,
+        "after_1s_s": 0.135,
+        "continued": true
+      },
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_LONG_QA_R3_20260928_025430",
+      "exports": "D:\\UoM\\openfoamfriend\\v20260928_023043\\evidence\\eight_long_runs\\round3",
+      "review": "No pipeline defect observed in this round. Physical model/mesh adequacy remains unverified."
+    },
+    {
+      "round": 4,
+      "result": "PASS",
+      "purpose": "URANS SST full model fields",
+      "model": "kOmegaSST",
+      "Re": 3900,
+      "cells": 5120,
+      "cores": 4,
+      "end_time_s": 10.0,
+      "max_internal_dt_s": 0.005,
+      "max_observed_Co": 0.1816492133,
+      "genuine_frames": 21,
+      "field_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        5.0,
+        5.5,
+        6.0,
+        6.5,
+        7.0,
+        7.5,
+        8.0,
+        8.5,
+        9.0,
+        9.5,
+        10.0
+      ],
+      "required_fields": [
+        "U",
+        "p",
+        "k",
+        "omega",
+        "nut"
+      ],
+      "finite_all_fields_all_frames": true,
+      "field_extrema": {
+        "U": {
+          "min": -1.0916391611099243,
+          "max": 1.7411881685256958
+        },
+        "p": {
+          "min": -1.2371187210083008,
+          "max": 0.5571978092193604
+        },
+        "k": {
+          "min": 0.00012398672697599977,
+          "max": 0.07136700302362442
+        },
+        "omega": {
+          "min": 0.1903407722711563,
+          "max": 20.38353729248047
+        },
+        "nut": {
+          "min": 6.263704563025385e-06,
+          "max": 0.012603934854269028
+        }
+      },
+      "quality": {
+        "cells": 5120,
+        "faces": 16896,
+        "internal_faces": 13824,
+        "max_skewness": 0.013228462401548268,
+        "max_nonorthogonality_deg": 1.7075472925031877e-06,
+        "skew_above_limit": 0,
+        "nonortho_above_limit": 0,
+        "min_cell_volume": 0.0009509774785928945,
+        "nonpositive_cells": 0,
+        "worst_skew_face": 2835,
+        "worst_skew_xyz": [
+          0.0,
+          0.5361892901653059,
+          0.125
+        ],
+        "worst_nonortho_face": 7488,
+        "worst_nonortho_xyz": [
+          -1.2260313215437602,
+          -1.3527171082473453,
+          -0.375
+        ],
+        "source": "OpenFOAM-14 meshCheck formulas; independently calculated from ASCII polyMesh"
+      },
+      "mat_3d_shape": [
+        107520,
+        8
+      ],
+      "force_samples": 2001,
+      "solver_elapsed_s": 35,
+      "pause_resume": null,
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_LONG_QA_R4_20260928_025430",
+      "exports": "D:\\UoM\\openfoamfriend\\v20260928_023043\\evidence\\eight_long_runs\\round4",
+      "review": "No pipeline defect observed in this round. Physical model/mesh adequacy remains unverified."
+    },
+    {
+      "round": 5,
+      "result": "PASS",
+      "purpose": "High-Re parameter endpoint; no accuracy claim",
+      "model": "kOmegaSST",
+      "Re": 10000000,
+      "cells": 5120,
+      "cores": 4,
+      "end_time_s": 10.0,
+      "max_internal_dt_s": 0.005,
+      "max_observed_Co": 0.1818645279,
+      "genuine_frames": 21,
+      "field_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        5.0,
+        5.5,
+        6.0,
+        6.5,
+        7.0,
+        7.5,
+        8.0,
+        8.5,
+        9.0,
+        9.5,
+        10.0
+      ],
+      "required_fields": [
+        "U",
+        "p",
+        "k",
+        "omega",
+        "nut"
+      ],
+      "finite_all_fields_all_frames": true,
+      "field_extrema": {
+        "U": {
+          "min": -1.1100282669067383,
+          "max": 1.7490841150283813
+        },
+        "p": {
+          "min": -1.259128451347351,
+          "max": 0.5571740865707397
+        },
+        "k": {
+          "min": 0.0001263119775103405,
+          "max": 0.07084378600120544
+        },
+        "omega": {
+          "min": 0.19032330811023712,
+          "max": 22.063560485839844
+        },
+        "nut": {
+          "min": 4.093604275112739e-06,
+          "max": 0.009999999776482582
+        }
+      },
+      "quality": {
+        "cells": 5120,
+        "faces": 16896,
+        "internal_faces": 13824,
+        "max_skewness": 0.013228462401548268,
+        "max_nonorthogonality_deg": 1.7075472925031877e-06,
+        "skew_above_limit": 0,
+        "nonortho_above_limit": 0,
+        "min_cell_volume": 0.0009509774785928945,
+        "nonpositive_cells": 0,
+        "worst_skew_face": 2835,
+        "worst_skew_xyz": [
+          0.0,
+          0.5361892901653059,
+          0.125
+        ],
+        "worst_nonortho_face": 7488,
+        "worst_nonortho_xyz": [
+          -1.2260313215437602,
+          -1.3527171082473453,
+          -0.375
+        ],
+        "source": "OpenFOAM-14 meshCheck formulas; independently calculated from ASCII polyMesh"
+      },
+      "mat_3d_shape": [
+        107520,
+        8
+      ],
+      "force_samples": 2001,
+      "solver_elapsed_s": 36,
+      "pause_resume": null,
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_LONG_QA_R5_20260928_025430",
+      "exports": "D:\\UoM\\openfoamfriend\\v20260928_023043\\evidence\\eight_long_runs\\round5",
+      "review": "No pipeline defect observed in this round. Physical model/mesh adequacy remains unverified."
+    },
+    {
+      "round": 6,
+      "result": "PASS",
+      "purpose": "3D LES interface and algebraic SGS fields",
+      "model": "WALE",
+      "Re": 3900,
+      "cells": 5120,
+      "cores": 4,
+      "end_time_s": 10.0,
+      "max_internal_dt_s": 0.005,
+      "max_observed_Co": 0.181653324,
+      "genuine_frames": 21,
+      "field_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        5.0,
+        5.5,
+        6.0,
+        6.5,
+        7.0,
+        7.5,
+        8.0,
+        8.5,
+        9.0,
+        9.5,
+        10.0
+      ],
+      "required_fields": [
+        "U",
+        "p",
+        "nut"
+      ],
+      "finite_all_fields_all_frames": true,
+      "field_extrema": {
+        "U": {
+          "min": -1.1098240613937378,
+          "max": 1.7389862537384033
+        },
+        "p": {
+          "min": -1.2381706237792969,
+          "max": 0.5574012994766235
+        },
+        "nut": {
+          "min": 6.726595683589779e-15,
+          "max": 0.0059895762242376804
+        }
+      },
+      "quality": {
+        "cells": 5120,
+        "faces": 16896,
+        "internal_faces": 13824,
+        "max_skewness": 0.013228462401548268,
+        "max_nonorthogonality_deg": 1.7075472925031877e-06,
+        "skew_above_limit": 0,
+        "nonortho_above_limit": 0,
+        "min_cell_volume": 0.0009509774785928945,
+        "nonpositive_cells": 0,
+        "worst_skew_face": 2835,
+        "worst_skew_xyz": [
+          0.0,
+          0.5361892901653059,
+          0.125
+        ],
+        "worst_nonortho_face": 7488,
+        "worst_nonortho_xyz": [
+          -1.2260313215437602,
+          -1.3527171082473453,
+          -0.375
+        ],
+        "source": "OpenFOAM-14 meshCheck formulas; independently calculated from ASCII polyMesh"
+      },
+      "mat_3d_shape": [
+        107520,
+        8
+      ],
+      "force_samples": 2001,
+      "solver_elapsed_s": 31,
+      "pause_resume": null,
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_LONG_QA_R6_20260928_025430",
+      "exports": "D:\\UoM\\openfoamfriend\\v20260928_023043\\evidence\\eight_long_runs\\round6",
+      "review": "No pipeline defect observed in this round. Physical model/mesh adequacy remains unverified."
+    },
+    {
+      "round": 7,
+      "result": "PASS",
+      "purpose": "Hybrid interface, delta and required fields",
+      "model": "kOmegaSSTDES",
+      "Re": 3900,
+      "cells": 5120,
+      "cores": 4,
+      "end_time_s": 10.0,
+      "max_internal_dt_s": 0.005,
+      "max_observed_Co": 0.1816492133,
+      "genuine_frames": 21,
+      "field_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        5.0,
+        5.5,
+        6.0,
+        6.5,
+        7.0,
+        7.5,
+        8.0,
+        8.5,
+        9.0,
+        9.5,
+        10.0
+      ],
+      "required_fields": [
+        "U",
+        "p",
+        "k",
+        "omega",
+        "nut"
+      ],
+      "finite_all_fields_all_frames": true,
+      "field_extrema": {
+        "U": {
+          "min": -1.0981426239013672,
+          "max": 1.7411881685256958
+        },
+        "p": {
+          "min": -1.237116813659668,
+          "max": 0.5572061538696289
+        },
+        "k": {
+          "min": 0.00010647044837241992,
+          "max": 0.021416332572698593
+        },
+        "omega": {
+          "min": 0.1903391033411026,
+          "max": 18.71284294128418
+        },
+        "nut": {
+          "min": 6.215658231667476e-06,
+          "max": 0.0030398909002542496
+        }
+      },
+      "quality": {
+        "cells": 5120,
+        "faces": 16896,
+        "internal_faces": 13824,
+        "max_skewness": 0.013228462401548268,
+        "max_nonorthogonality_deg": 1.7075472925031877e-06,
+        "skew_above_limit": 0,
+        "nonortho_above_limit": 0,
+        "min_cell_volume": 0.0009509774785928945,
+        "nonpositive_cells": 0,
+        "worst_skew_face": 2835,
+        "worst_skew_xyz": [
+          0.0,
+          0.5361892901653059,
+          0.125
+        ],
+        "worst_nonortho_face": 7488,
+        "worst_nonortho_xyz": [
+          -1.2260313215437602,
+          -1.3527171082473453,
+          -0.375
+        ],
+        "source": "OpenFOAM-14 meshCheck formulas; independently calculated from ASCII polyMesh"
+      },
+      "mat_3d_shape": [
+        107520,
+        8
+      ],
+      "force_samples": 2001,
+      "solver_elapsed_s": 33,
+      "pause_resume": null,
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_LONG_QA_R7_20260928_025430",
+      "exports": "D:\\UoM\\openfoamfriend\\v20260928_023043\\evidence\\eight_long_runs\\round7",
+      "review": "No pipeline defect observed in this round. Physical model/mesh adequacy remains unverified."
+    },
+    {
+      "round": 8,
+      "result": "PASS",
+      "purpose": "Isolated native model over 10s, U^4 averaging fields",
+      "model": "dynamicLagrangian",
+      "Re": 3900,
+      "cells": 5120,
+      "cores": 4,
+      "end_time_s": 10.0,
+      "max_internal_dt_s": 0.005,
+      "max_observed_Co": 0.1803313729,
+      "genuine_frames": 21,
+      "field_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        5.0,
+        5.5,
+        6.0,
+        6.5,
+        7.0,
+        7.5,
+        8.0,
+        8.5,
+        9.0,
+        9.5,
+        10.0
+      ],
+      "required_fields": [
+        "U",
+        "p",
+        "flm",
+        "fmm",
+        "nut"
+      ],
+      "finite_all_fields_all_frames": true,
+      "field_extrema": {
+        "U": {
+          "min": -1.1113890409469604,
+          "max": 1.7228076457977295
+        },
+        "p": {
+          "min": -1.2324631214141846,
+          "max": 0.5763183832168579
+        },
+        "flm": {
+          "min": 1.030139706870159e-08,
+          "max": 0.2160061001777649
+        },
+        "fmm": {
+          "min": 0.000517403706908226,
+          "max": 28.42632293701172
+        },
+        "nut": {
+          "min": 1.3068121029746749e-09,
+          "max": 0.013804689981043339
+        }
+      },
+      "quality": {
+        "cells": 5120,
+        "faces": 16896,
+        "internal_faces": 13824,
+        "max_skewness": 0.013228462401548268,
+        "max_nonorthogonality_deg": 1.7075472925031877e-06,
+        "skew_above_limit": 0,
+        "nonortho_above_limit": 0,
+        "min_cell_volume": 0.0009509774785928945,
+        "nonpositive_cells": 0,
+        "worst_skew_face": 2835,
+        "worst_skew_xyz": [
+          0.0,
+          0.5361892901653059,
+          0.125
+        ],
+        "worst_nonortho_face": 7488,
+        "worst_nonortho_xyz": [
+          -1.2260313215437602,
+          -1.3527171082473453,
+          -0.375
+        ],
+        "source": "OpenFOAM-14 meshCheck formulas; independently calculated from ASCII polyMesh"
+      },
+      "mat_3d_shape": [
+        107520,
+        8
+      ],
+      "force_samples": 2001,
+      "solver_elapsed_s": 38,
+      "pause_resume": null,
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_LONG_QA_R8_20260928_025430",
+      "exports": "D:\\UoM\\openfoamfriend\\v20260928_023043\\evidence\\eight_long_runs\\round8",
+      "review": "No pipeline defect observed in this round. Physical model/mesh adequacy remains unverified."
+    }
+  ],
+  "failures": [],
+  "scope": "Software integration and finite-field stability screening. 10s / 5120 cells is not a DNS/LES accuracy or statistical convergence certificate.",
+  "eight_rounds_passed": true
+}

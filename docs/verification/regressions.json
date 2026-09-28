@@ -1,0 +1,22 @@
+[
+  {
+    "test": "validate_manual_context_guide.py",
+    "exit_code": 0
+  },
+  {
+    "test": "validate_manual_primitives.py",
+    "exit_code": 0
+  },
+  {
+    "test": "validate_mesh_click_routes.py",
+    "exit_code": 0
+  },
+  {
+    "test": "validate_workspace_upgrade.py",
+    "exit_code": 0
+  },
+  {
+    "test": "validate_model_catalogue.py",
+    "exit_code": 0
+  }
+]

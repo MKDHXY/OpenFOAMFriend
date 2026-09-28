@@ -1,0 +1,139 @@
+{
+  "release": "v20260928_164718",
+  "reused_completed_cases_after_UI_only_fix": false,
+  "three_real_3D_four_rank_pipelines_passed": true,
+  "max_reserved_cores": 4,
+  "actual_driver_intervals": [
+    {
+      "case": "OFF_BINDING_R1_20260928_170740",
+      "start_unix_s": 1790579262,
+      "end_unix_s": 1790579265,
+      "ranks": 4
+    },
+    {
+      "case": "OFF_BINDING_R2_20260928_170740",
+      "start_unix_s": 1790579266,
+      "end_unix_s": 1790579269,
+      "ranks": 4
+    },
+    {
+      "case": "OFF_BINDING_R3_20260928_170740",
+      "start_unix_s": 1790579270,
+      "end_unix_s": 1790579275,
+      "ranks": 4
+    }
+  ],
+  "rounds": [
+    {
+      "case": "OFF_BINDING_R1_20260928_170740",
+      "case_folder": "\\\\wsl.localhost\\OFFPackageQA_20260928_164718\\home\\off\\OpenFOAM\\off14\\run\\OFF_BINDING_R1_20260928_170740",
+      "model": "laminar",
+      "mesh_method": "Structured cylinder O-grid",
+      "cells": 5120,
+      "ranks": 4,
+      "end_time_s": 0.04,
+      "genuine_frames": 5,
+      "PIMPLE": {
+        "outer": 3,
+        "pressure": 3,
+        "nonorthogonal": 0,
+        "momentum_predictor": false
+      },
+      "max_observed_Co": 0.01636293594,
+      "quality": {
+        "cells": 5120.0,
+        "aspect_ratio": 5.87620183,
+        "non_orthogonality": 1.478779333e-06,
+        "skewness": 0.0132284624,
+        "passed": true,
+        "log": "\\\\wsl.localhost\\OFFPackageQA_20260928_164718\\home\\off\\OpenFOAM\\off14\\run\\OFF_BINDING_R1_20260928_170740\\log.checkMesh",
+        "sets": []
+      },
+      "MAT_shape": [
+        25600,
+        6
+      ],
+      "CSV_shape": [
+        25600,
+        8
+      ],
+      "finite": true,
+      "state": "DONE"
+    },
+    {
+      "case": "OFF_BINDING_R2_20260928_170740",
+      "case_folder": "\\\\wsl.localhost\\OFFPackageQA_20260928_164718\\home\\off\\OpenFOAM\\off14\\run\\OFF_BINDING_R2_20260928_170740",
+      "model": "laminar",
+      "mesh_method": "Manual topology (Gmsh)",
+      "cells": 5120,
+      "ranks": 4,
+      "end_time_s": 0.06,
+      "genuine_frames": 4,
+      "PIMPLE": {
+        "outer": 3,
+        "pressure": 3,
+        "nonorthogonal": 0,
+        "momentum_predictor": false
+      },
+      "max_observed_Co": 0.01000421587,
+      "quality": {
+        "cells": 5120.0,
+        "aspect_ratio": 5.149137537,
+        "non_orthogonality": 17.37354128,
+        "skewness": 0.2738817701,
+        "passed": true,
+        "log": "\\\\wsl.localhost\\OFFPackageQA_20260928_164718\\home\\off\\OpenFOAM\\off14\\run\\OFF_BINDING_R2_20260928_170740\\log.checkMesh",
+        "sets": []
+      },
+      "MAT_shape": [
+        20480,
+        6
+      ],
+      "CSV_shape": [
+        20480,
+        8
+      ],
+      "finite": true,
+      "state": "DONE"
+    },
+    {
+      "case": "OFF_BINDING_R3_20260928_170740",
+      "case_folder": "\\\\wsl.localhost\\OFFPackageQA_20260928_164718\\home\\off\\OpenFOAM\\off14\\run\\OFF_BINDING_R3_20260928_170740",
+      "model": "kOmegaSST",
+      "mesh_method": "Structured cylinder O-grid",
+      "cells": 5120,
+      "ranks": 4,
+      "end_time_s": 0.1,
+      "genuine_frames": 6,
+      "PIMPLE": {
+        "outer": 3,
+        "pressure": 3,
+        "nonorthogonal": 0,
+        "momentum_predictor": false
+      },
+      "max_observed_Co": 0.01636283995,
+      "quality": {
+        "cells": 5120.0,
+        "aspect_ratio": 5.87620183,
+        "non_orthogonality": 1.478779333e-06,
+        "skewness": 0.0132284624,
+        "passed": true,
+        "log": "\\\\wsl.localhost\\OFFPackageQA_20260928_164718\\home\\off\\OpenFOAM\\off14\\run\\OFF_BINDING_R3_20260928_170740\\log.checkMesh",
+        "sets": []
+      },
+      "MAT_shape": [
+        30720,
+        6
+      ],
+      "CSV_shape": [
+        30720,
+        8
+      ],
+      "finite": true,
+      "state": "DONE"
+    }
+  ],
+  "result_buttons_real_dialog_exports": true,
+  "complete_foam_export_verified": "D:\\OpenFOAMFriend\\v20260928_164718\\evidence\\workspace_click_QA\\actual_pipelines_v017\\foam_export\\OFF_BINDING_R3_20260928_170740_export_20260928_170810",
+  "errors": []
+}

@@ -1,0 +1,64 @@
+{
+  "release": "v20260928_164718",
+  "checks": [
+    "Full actual import + relocated bundled runtime PASS",
+    "Lite missing WSL: no Linux/system commands PASS",
+    "Nonempty unrelated directory protected PASS",
+    "Corrupt payload rejected PASS",
+    "Read-only missing WSL diagnostic PASS"
+  ],
+  "full_record": {
+    "mode": "full",
+    "release": "v20260928_164718",
+    "distro": "OFFPackageInstallerQA_20260928_164718",
+    "environment": {
+      "windows": "Windows-10-10.0.19045-SP0",
+      "architecture": "AMD64",
+      "python": "D:\\OpenFOAMFriend\\installer_cache\\portable_runtime\\python.exe",
+      "wsl_present": true,
+      "distributions": [
+        "Ubuntu",
+        "OFFPackageQA_20260928_164718",
+        "OFFPackageBuild_20260928_164718",
+        "OFFPackageInstallerQA_20260928_164718"
+      ],
+      "ready": true,
+      "errors": [],
+      "distro": "OFFPackageInstallerQA_20260928_164718",
+      "bashrc": "/opt/openfoam14/etc/bashrc",
+      "user": "off",
+      "home": "/home/off",
+      "probe": "/opt/openfoam14/platforms/linux64GccDPInt32Opt/bin/foamRun\n/opt/openfoam14/platforms/linux64GccDPInt32Opt/bin/blockMesh\n/opt/openfoam14/platforms/linux64GccDPInt32Opt/bin/gmshToFoam\n/usr/bin/mpirun\n14\noff\n/home/off",
+      "foam_version": "14"
+    },
+    "installed": true,
+    "completed": "2026-09-28 17:13:15"
+  },
+  "lite_record": {
+    "mode": "lite",
+    "release": "v20260928_164718",
+    "distro": null,
+    "environment": {
+      "ready": false,
+      "wsl_present": false,
+      "errors": [
+        "WSL missing"
+      ],
+      "distributions": []
+    },
+    "installed": true,
+    "completed": "2026-09-28 17:13:32"
+  },
+  "lite_actual_commands": [
+    [
+      "D:\\OpenFOAMFriend\\installer_cache\\Installed LITE 中文 space\\runtime\\python.exe",
+      "-X",
+      "utf8",
+      "D:\\OpenFOAMFriend\\installer_cache\\Installed LITE 中文 space\\v20260928_164718\\tools\\diagnose.py"
+    ]
+  ],
+  "isolated_runtime": "D:\\OpenFOAMFriend\\installer_cache\\Installed FULL 中文 space\\runtime\\python.exe\r\n['D:\\\\UoM\\\\openfoamfriend\\\\installer_cache\\\\Installed FULL 中文 space\\\\runtime\\\\python312.zip', 'D:\\\\UoM\\\\openfoamfriend\\\\installer_cache\\\\Installed FULL 中文 space\\\\runtime', 'D:\\\\UoM\\\\openfoamfriend\\\\installer_cache\\\\Installed FULL 中文 space\\\\runtime\\\\Lib\\\\site-packages']",
+  "windows_stage_inspect_only": "Full Windows stage: local Microsoft WSL MSI + optional Windows features; no forced restart.",
+  "cold_windows_feature_enable_and_reboot_physically_tested": false,
+  "system_python_not_on_PATH": true
+}

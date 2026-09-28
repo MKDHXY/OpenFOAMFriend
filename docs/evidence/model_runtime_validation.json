@@ -1,0 +1,601 @@
+{
+  "attempt": "20260927_114106",
+  "all_24_passed": true,
+  "models": [
+    {
+      "model": "laminar",
+      "family": "Laminar",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_laminar_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816894243
+    },
+    {
+      "model": "SpalartAllmaras",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_SpalartAllmaras_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "nuTilda",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816831879
+    },
+    {
+      "model": "kEpsilon",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_kEpsilon_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "k",
+        "epsilon",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816871529
+    },
+    {
+      "model": "RNGkEpsilon",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_RNGkEpsilon_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "k",
+        "epsilon",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816873112
+    },
+    {
+      "model": "realizableKE",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_realizableKE_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "k",
+        "epsilon",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816877858
+    },
+    {
+      "model": "LaunderSharmaKE",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_LaunderSharmaKE_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "k",
+        "epsilon",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816893573
+    },
+    {
+      "model": "kOmega",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_kOmega_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "k",
+        "omega",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816877189
+    },
+    {
+      "model": "kOmega2006",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_kOmega2006_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "k",
+        "omega",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816888357
+    },
+    {
+      "model": "kOmegaSST",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_kOmegaSST_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "k",
+        "omega",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816888383
+    },
+    {
+      "model": "kOmegaSSTSAS",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_kOmegaSSTSAS_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "k",
+        "omega",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816888383
+    },
+    {
+      "model": "kOmegaSSTLM",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_kOmegaSSTLM_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "k",
+        "omega",
+        "nut",
+        "ReThetat",
+        "gammaInt"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816888383
+    },
+    {
+      "model": "v2f",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_v2f_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "k",
+        "epsilon",
+        "v2",
+        "f",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816870756
+    },
+    {
+      "model": "LRR",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_LRR_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "R",
+        "epsilon",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816826557
+    },
+    {
+      "model": "SSG",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_SSG_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "R",
+        "epsilon",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.0181682655
+    },
+    {
+      "model": "Smagorinsky",
+      "family": "LES",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_Smagorinsky_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816701538
+    },
+    {
+      "model": "WALE",
+      "family": "LES",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_WALE_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816893199
+    },
+    {
+      "model": "kEqn",
+      "family": "LES",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_kEqn_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "k",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816886989
+    },
+    {
+      "model": "dynamicKEqn",
+      "family": "LES",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_dynamicKEqn_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "k",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816894236
+    },
+    {
+      "model": "dynamicLagrangian",
+      "family": "LES",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_dynamicLagrangian_20260927_114406",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "flm",
+        "fmm",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Isolated GPL Foundation 14 dimension fix: offDynamicLagrangian",
+      "max_observed_Co": 0.01815009959
+    },
+    {
+      "model": "DeardorffDiffStress",
+      "family": "LES",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_DeardorffDiffStress_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "R",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816860873
+    },
+    {
+      "model": "SpalartAllmarasDES",
+      "family": "Hybrid",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_SpalartAllmarasDES_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "nuTilda",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816834455
+    },
+    {
+      "model": "SpalartAllmarasDDES",
+      "family": "Hybrid",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_SpalartAllmarasDDES_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "nuTilda",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816834095
+    },
+    {
+      "model": "SpalartAllmarasIDDES",
+      "family": "Hybrid",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_SpalartAllmarasIDDES_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "nuTilda",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816834095
+    },
+    {
+      "model": "kOmegaSSTDES",
+      "family": "Hybrid",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_kOmegaSSTDES_20260927_114106",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "k",
+        "omega",
+        "nut"
+      ],
+      "errors": [],
+      "frames": [
+        0.0,
+        0.001,
+        0.002
+      ],
+      "finite_required_fields": true,
+      "VTK_count": 18,
+      "implementation": "Installed Foundation 14 native model",
+      "max_observed_Co": 0.01816888383
+    }
+  ],
+  "scope": "4-step software integration smoke tests; no physical turbulence/wake accuracy claim",
+  "errors": [],
+  "release": "v20260927_112849",
+  "stock_options": 23,
+  "isolated_compatibility_options": 1,
+  "repair": "Windows CRLF in generated Make/files fixed with explicit LF; failed current-release first attempt retained."
+}

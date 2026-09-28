@@ -1,0 +1,15 @@
+OpenFOAM Friend
+Copyright (C) 2026 zongxuan and hanwen.
+Application code: GPL-3.0-or-later; see LICENSE.
+Third-party software retains its own copyright/license terms.
+This project is independent and is not affiliated with or endorsed by the OpenFOAM Foundation, OpenCFD, Microsoft, Qt, Gmsh or Kitware.
+OpenFOAM is an upstream trademark.
+
+The native dynamicLagrangian adaptation retains upstream Foundation14 copyright and GPL-3.0-or-later notices; see native/dynamicLagrangian/PROVENANCE.json and COPYING.
+The bundled Gmsh API/library is GPL-2.0-or-later with its upstream external-library exception. Corresponding Gmsh4.15.2 source is included in package/component_sources.
+PySide6/Qt are dynamically linked and unmodified. LGPL/GPL texts are retained with the runtime, and PySide6 source is included. Qt corresponding source: https://download.qt.io/official_releases/qt/6.11/6.11.2/ . Compatible library replacement and debugging changes are permitted.
+Python PSF, VTK BSD, NumPy/SciPy BSD, Matplotlib PSF-derived, Pillow HPND and other dependency notices are preserved in runtime package metadata.
+OpenFOAM14 source/COPYING is in the FULL image at /opt/openfoam14; upstream https://github.com/OpenFOAM/OpenFOAM-14 . Ubuntu package licenses/source pointers: /usr/share/doc/*/copyright and https://archive.ubuntu.com/ubuntu/ .
+Microsoft WSL MSI retains original signature/terms; https://github.com/microsoft/WSL .
+OpenSSH client files retain original BSD notices; upstream 10.0.0.0p2-Preview is explicitly a preview, no SSH server is installed.
+No personal cases, passwords, tokens or private SSH keys are included in the release.

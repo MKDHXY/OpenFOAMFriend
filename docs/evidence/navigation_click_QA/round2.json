@@ -1,0 +1,115 @@
+{
+  "release": "v20260928_164718",
+  "round": 2,
+  "real_mouse_navigation": [
+    {
+      "from_stage": 0,
+      "guided": true,
+      "clicked": "generator",
+      "visible_page": 0,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 0,
+      "guided": true,
+      "clicked": "refinement",
+      "visible_page": 1,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 1,
+      "guided": true,
+      "clicked": "generator",
+      "visible_page": 0,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 1,
+      "guided": true,
+      "clicked": "refinement",
+      "visible_page": 1,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 2,
+      "guided": true,
+      "clicked": "generator",
+      "visible_page": 0,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 2,
+      "guided": true,
+      "clicked": "refinement",
+      "visible_page": 1,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 0,
+      "guided": false,
+      "clicked": "generator",
+      "visible_page": 0,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 0,
+      "guided": false,
+      "clicked": "refinement",
+      "visible_page": 1,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 1,
+      "guided": false,
+      "clicked": "generator",
+      "visible_page": 0,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 1,
+      "guided": false,
+      "clicked": "refinement",
+      "visible_page": 1,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 2,
+      "guided": false,
+      "clicked": "generator",
+      "visible_page": 0,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 2,
+      "guided": false,
+      "clicked": "refinement",
+      "visible_page": 1,
+      "result": "PASS"
+    }
+  ],
+  "double_click_no_duplicate_dialog": true,
+  "actual_keyboard_apply_radial_cells": 21,
+  "actual_keyboard_apply_radial_ratio": 3,
+  "actual_toolbar_routes": true,
+  "draw_button_and_two_click_region": true,
+  "unsupported_local_ogrid_refinement_explicit": true,
+  "fixed_header_and_page_tabs_visible": true,
+  "bilingual_all_property_labels": true,
+  "unapplied_drafts_preserved_across_language_and_page": true,
+  "hidden_and_floating_dock_restored": true,
+  "invalid_resolution_rejected_with_feedback": true,
+  "edited_generator_actual_mesh": {
+    "cells": 5376,
+    "quality": {
+      "cells": 5376.0,
+      "aspect_ratio": 4.208441782,
+      "non_orthogonality": 1.707547293e-06,
+      "skewness": 0.05378071027,
+      "passed": true,
+      "log": "\\\\wsl.localhost\\OFFPackageQA_20260928_164718\\home\\off\\OpenFOAM\\off14\\run\\OFF_CLICK_EDITED_20260928_171227\\log.checkMesh",
+      "sets": []
+    },
+    "case": "\\\\wsl.localhost\\OFFPackageQA_20260928_164718\\home\\off\\OpenFOAM\\off14\\run\\OFF_CLICK_EDITED_20260928_171227"
+  },
+  "errors": []
+}

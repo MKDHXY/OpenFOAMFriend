@@ -1,0 +1,60 @@
+{
+  "tests": [
+    {
+      "test": "validate_professional.py",
+      "exit_code": 0,
+      "elapsed_s": 8.21
+    },
+    {
+      "test": "validate_hci.py",
+      "exit_code": 0,
+      "elapsed_s": 4.21
+    },
+    {
+      "test": "validate_compact_navigation.py",
+      "exit_code": 0,
+      "elapsed_s": 6.5
+    },
+    {
+      "test": "validate_docking_ssh.py",
+      "exit_code": 0,
+      "elapsed_s": 10.02
+    },
+    {
+      "test": "validate_selection_dimensions.py",
+      "exit_code": 0,
+      "elapsed_s": 4.82
+    },
+    {
+      "test": "validate_button_feedback.py",
+      "exit_code": 0,
+      "elapsed_s": 4.95
+    },
+    {
+      "test": "validate_model_contracts.py",
+      "exit_code": 0,
+      "elapsed_s": 0.9
+    },
+    {
+      "test": "validate_model_ui.py",
+      "exit_code": 0,
+      "elapsed_s": 3.47
+    },
+    {
+      "test": "validate_physics_seeds.py",
+      "exit_code": 0,
+      "elapsed_s": 0.28
+    },
+    {
+      "test": "validate_colour_scientific.py",
+      "exit_code": 0,
+      "elapsed_s": 1.35
+    },
+    {
+      "test": "validate_tensor_export.py",
+      "exit_code": 0,
+      "elapsed_s": 0.67
+    }
+  ],
+  "errors": []
+}

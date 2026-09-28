@@ -1,0 +1,20 @@
+{
+  "context_toolbars_passed": true,
+  "drawing_actions_disabled_outside_geometry": true,
+  "context_inspector_passed": true,
+  "optional_guide_persisted_with_language": true,
+  "actual_connection_probe": true,
+  "geometry_and_physics_review": true,
+  "mesh_evidence_invalidated_on_edit": true,
+  "flow_edit_retains_mesh_but_invalidates_physics": true,
+  "preparation_gate_blocks_submission": true,
+  "guided_real_case": {
+    "name": "OFF_GUIDED_20260928_132528",
+    "state": "DONE",
+    "cores": 4,
+    "cells": 5120.0,
+    "end_time_s": 0.06,
+    "saved_frames": 7
+  },
+  "errors": []
+}

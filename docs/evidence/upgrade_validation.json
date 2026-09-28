@@ -1,0 +1,28 @@
+{
+  "bilingual_switch_passed": true,
+  "canonical_values_preserved": true,
+  "draw_undo_redo_duplicate_delete_passed": true,
+  "dictionary_token_preservation": true,
+  "openfoam_parser_after_formatted_save": "2",
+  "website_action_url": "http://spaceaero.space",
+  "website_network_access_not_asserted": true,
+  "real_previews": {
+    "ogrid_preview": {
+      "case": "OFF_ASSISTANT_20260928_024422_Mesh_024423",
+      "cells": 5120.0,
+      "skewness": 0.0132284624,
+      "nonorthogonality": 1.478779333e-06,
+      "state": "DONE"
+    },
+    "unstructured_preview": {
+      "case": "OFF_ASSISTED_GMSH_20260928_024422",
+      "regions": 2,
+      "cells": 3236.0,
+      "skewness": 0.4286767394,
+      "nonorthogonality": 22.55724744,
+      "strict_gate": true,
+      "state": "DONE"
+    }
+  },
+  "errors": []
+}

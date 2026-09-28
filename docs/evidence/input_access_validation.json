@@ -1,0 +1,12 @@
+{
+  "manual_dictionary_invalidates_mesh_advice_signature": true,
+  "all_wsl_cases_browsable_without_queue_selection": true,
+  "new_actions_zh_start_en_zh_language_roundtrip": true,
+  "duplicate_select_and_undo_preserve_compatible_backend": true,
+  "release": "v20260928_131031",
+  "actual_async_generated_files_menu": true,
+  "save_callback_applies_explicit_override": true,
+  "regenerate_retains_override": true,
+  "large_file_metadata_without_full_read": true,
+  "errors": []
+}

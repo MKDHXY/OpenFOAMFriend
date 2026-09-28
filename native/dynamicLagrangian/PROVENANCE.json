@@ -1,0 +1,15 @@
+{
+  "source": "OpenFOAM Foundation 14 installed source",
+  "upstream": "https://github.com/OpenFOAM/OpenFOAM-14/tree/master/src/MomentumTransportModels/momentumTransportModels/LES/dynamicLagrangian",
+  "upstream_sha256": {
+    "dynamicLagrangian.H": "e544787a40bd5cf403c5c2d2d9c19395250b9ca0e55abd560623415ce5ac025f",
+    "dynamicLagrangian.C": "1f03316000c578938000d9ae143bf5c96f6743f85c76d3b1fc15f103d1062641"
+  },
+  "changes": [
+    "Rename runtime model to offDynamicLagrangian to avoid replacing system registration",
+    "Two constructor field dimensions: dimless -> velocity^4; retain all transport equations and dimension checking"
+  ],
+  "licence": "GPL-3.0-or-later; original copyright headers preserved",
+  "status": "Compiled with wmake and passed a real 5120-cell/4-rank Foundation 14 solve, 3 genuine frames with finite flm/fmm/nut",
+  "test": "evidence/native_runtime_validation.json"
+}

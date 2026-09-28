@@ -1,0 +1,43 @@
+{
+  "release": "v20260928_023043",
+  "two_click_all_primitives": true,
+  "polygon_is_actual_solid": true,
+  "undo_restores_backend": true,
+  "self_intersection_rejected": true,
+  "single_mesh_tree_branch_and_correct_routing": true,
+  "seven_template_roundtrips": true,
+  "native_file_browser_draft_editable_source_readonly": true,
+  "all_required_actual_draft_files": true,
+  "manual_block_override_actual_cells": 5376,
+  "actual_polygon_GmshToFoam_2D_3D": [
+    {
+      "dimension": 2,
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_POLYGON_QA_2D_20260928_024413",
+      "quality": {
+        "cells": 1650.0,
+        "aspect_ratio": 1.778450258,
+        "non_orthogonality": 22.29907157,
+        "skewness": 0.2692664925,
+        "passed": true,
+        "log": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_POLYGON_QA_2D_20260928_024413\\log.checkMesh",
+        "sets": []
+      },
+      "strict_project_gate_would_pass": true
+    },
+    {
+      "dimension": 3,
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_POLYGON_QA_3D_20260928_024416",
+      "quality": {
+        "cells": 6600.0,
+        "aspect_ratio": 1.993628374,
+        "non_orthogonality": 22.29907157,
+        "skewness": 0.2692664925,
+        "passed": true,
+        "log": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_POLYGON_QA_3D_20260928_024416\\log.checkMesh",
+        "sets": []
+      },
+      "strict_project_gate_would_pass": true
+    }
+  ],
+  "errors": []
+}

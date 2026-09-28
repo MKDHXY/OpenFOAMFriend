@@ -1,0 +1,3 @@
+register.C
+
+LIB = $(FOAM_USER_LIBBIN)/liboffDynamicLagrangian_v20260927_040329

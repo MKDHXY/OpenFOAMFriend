@@ -1,0 +1,13 @@
+{
+  "anchor_snap": true,
+  "shift_ortho": true,
+  "circle_centre_radius": true,
+  "polyline_backspace_escape": true,
+  "keyboard_toolbar_sync": true,
+  "middle_pan_preserves_tool": true,
+  "preview_item_reused": true,
+  "selection_no_undo_pollution": true,
+  "bilingual_controls": true,
+  "OpenFOAM_environment_without_nounset": "/opt/openfoam14/platforms/linux64GccDPInt32Opt/bin/foamRun",
+  "errors": []
+}

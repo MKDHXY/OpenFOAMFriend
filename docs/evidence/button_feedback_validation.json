@@ -1,0 +1,8 @@
+{
+  "command_checked_while_real_dialog_open": true,
+  "command_released_after_dialog": true,
+  "exclusive_persistent_drawing_mode": true,
+  "worker_checked_disabled_until_finish": true,
+  "pending_not_reenabled_by_context_refresh": true,
+  "errors": []
+}

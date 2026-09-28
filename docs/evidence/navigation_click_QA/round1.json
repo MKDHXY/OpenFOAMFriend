@@ -1,0 +1,97 @@
+{
+  "release": "v20260928_113815",
+  "round": 1,
+  "real_mouse_navigation": [
+    {
+      "from_stage": 0,
+      "guided": true,
+      "clicked": "generator",
+      "visible_page": 0,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 0,
+      "guided": true,
+      "clicked": "refinement",
+      "visible_page": 1,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 1,
+      "guided": true,
+      "clicked": "generator",
+      "visible_page": 0,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 1,
+      "guided": true,
+      "clicked": "refinement",
+      "visible_page": 1,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 2,
+      "guided": true,
+      "clicked": "generator",
+      "visible_page": 0,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 2,
+      "guided": true,
+      "clicked": "refinement",
+      "visible_page": 1,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 0,
+      "guided": false,
+      "clicked": "generator",
+      "visible_page": 0,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 0,
+      "guided": false,
+      "clicked": "refinement",
+      "visible_page": 1,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 1,
+      "guided": false,
+      "clicked": "generator",
+      "visible_page": 0,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 1,
+      "guided": false,
+      "clicked": "refinement",
+      "visible_page": 1,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 2,
+      "guided": false,
+      "clicked": "generator",
+      "visible_page": 0,
+      "result": "PASS"
+    },
+    {
+      "from_stage": 2,
+      "guided": false,
+      "clicked": "refinement",
+      "visible_page": 1,
+      "result": "PASS"
+    }
+  ],
+  "double_click_no_duplicate_dialog": true,
+  "actual_keyboard_apply_radial_cells": 21,
+  "actual_keyboard_apply_radial_ratio": 3,
+  "actual_toolbar_routes": true,
+  "draw_button_and_two_click_region": true,
+  "unsupported_local_ogrid_refinement_explicit": true,
+  "errors": []
+}

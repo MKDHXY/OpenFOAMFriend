@@ -1,0 +1,22 @@
+{
+  "matched_real_mesh_and_explicit_model_apply": true,
+  "geometry_change_invalidates_old_mesh": true,
+  "real_mesh_metrics": {
+    "cells": 5120,
+    "wall_cell_distance": {
+      "min_m": 0.03695889844479355,
+      "max_m": 0.03695889844481827,
+      "mean_m": 0.03695889844480879,
+      "faces": 256,
+      "definition": "Normal projection from owner volume centroid to cylinder face plane; geometric distance, not y+."
+    },
+    "uniform_flux_rate_per_velocity": 23.504807319066252,
+    "definition": "max_cells(sum_faces |(1,0,0) dot Sf| / (2 V)); multiply by U and dt for a uniform-inlet geometric Co estimate. Actual evolved-flow Co differs.",
+    "source_case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_RELEASE_R1_20260928_023743",
+    "mesh_sha256": "7426acae2b5772b158ab0e92c7f996045b07f491f34d0b21654c8c2a68d4ca8d"
+  },
+  "no_geometry_or_time_mutation": true,
+  "custom_force_length_consistent": true,
+  "bad_reference_creates_no_case": true,
+  "errors": []
+}

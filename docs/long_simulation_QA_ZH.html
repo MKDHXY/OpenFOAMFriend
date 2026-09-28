@@ -1,0 +1,125 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>新增八轮 10 秒完整仿真软件验收</title><style>body{font:15px system-ui,sans-serif;color:#19334a;background:#f3f6f8;margin:0;padding:30px}main{max-width:1200px;margin:auto}section{background:white;padding:22px;margin:20px 0;border:1px solid #d7e0e6}h1,h2{font-weight:600}table{border-collapse:collapse;width:100%;background:white}th,td{padding:10px;border:1px solid #d7e0e6;text-align:left}th{background:#e9eff4}img{max-width:100%;height:auto}pre{white-space:pre-wrap;overflow-wrap:anywhere}a{color:#006c93}p{overflow-wrap:anywhere}</style><main><h1>新增八轮 10 秒完整仿真软件验收</h1><p>OpenFOAM Friend 0.12 historical evidence · v20260928_023043 · zongxuan &amp; hanwen</p><p>八轮依次完成真实三维求解，每轮 10 秒。核验每个保存时刻全部必需场、真实四进程目录、网格质量、Courant 历史、力输出、MAT/CSV/PNG/GIF，以及暂停续算。</p><table><thead><tr><th>#</th><th>模型</th><th>Re</th><th>单元</th><th>MPI 进程</th><th>t / s</th><th>Δt max / s</th><th>Co max</th><th>帧</th><th>求解耗时秒</th><th>结果</th></tr></thead><tbody><tr><td>1</td><td>laminar</td><td>200</td><td>5120</td><td>4</td><td>10.0</td><td>0.005</td><td>0.178505</td><td>21</td><td>34</td><td>PASS</td></tr><tr><td>2</td><td>laminar</td><td>1</td><td>5120</td><td>4</td><td>10.0</td><td>0.005</td><td>0.124264</td><td>21</td><td>37</td><td>PASS</td></tr><tr><td>3</td><td>laminar</td><td>200</td><td>5120</td><td>4</td><td>10.0</td><td>0.0025</td><td>0.0900242</td><td>21</td><td>64</td><td>PASS</td></tr><tr><td>4</td><td>kOmegaSST</td><td>3900</td><td>5120</td><td>4</td><td>10.0</td><td>0.005</td><td>0.181649</td><td>21</td><td>35</td><td>PASS</td></tr><tr><td>5</td><td>kOmegaSST</td><td>10000000</td><td>5120</td><td>4</td><td>10.0</td><td>0.005</td><td>0.181865</td><td>21</td><td>36</td><td>PASS</td></tr><tr><td>6</td><td>WALE</td><td>3900</td><td>5120</td><td>4</td><td>10.0</td><td>0.005</td><td>0.181653</td><td>21</td><td>31</td><td>PASS</td></tr><tr><td>7</td><td>kOmegaSSTDES</td><td>3900</td><td>5120</td><td>4</td><td>10.0</td><td>0.005</td><td>0.181649</td><td>21</td><td>33</td><td>PASS</td></tr><tr><td>8</td><td>dynamicLagrangian</td><td>3900</td><td>5120</td><td>4</td><td>10.0</td><td>0.005</td><td>0.180331</td><td>21</td><td>38</td><td>PASS</td></tr></tbody></table><section><h2>发现的问题与修正</h2><p>上一版 0.11 发现并修复了独立查看器的规范选项初始化。历史 0.12 使用该修复；本轮若出现失败，原始信息保留于本轮 ledger。全部八轮记录已通过。</p><p><a href="evidence/eight_long_runs/ledger.json">Raw ledger</a> · <a href="evidence/eight_long_runs/engineering_review.json">Independent processor/MAT audit</a> · <a href="evidence/viewer_initialization_validation.json">Viewer regression</a></p></section><section><h2>通过的含义</h2><p>这些是软件集成与有限值稳定性检查。5120 单元粗网格的 WALE/DES/高雷诺数运行不认证物理精度。仅运行 10 秒不能证明统计收敛或可信 St。第三轮较小时间步是回归测试，尚未完成时间步独立性研究。0.5 秒保存间隔与内部自适应积分时间步不同。</p></section><section><h2>1. 三维层流基线全流程 — laminar</h2><p>Re = 200; 0–10 s; 5120 cells; 4 MPI ranks; 21 genuine saved frames; 107520 × 8 xyztuvwp and 107520 × 6 xytuvp.</p><p>软件流程通过。尚未认证网格、时间步或模型的物理精度。</p><p>网格偏斜度 / 非正交角 / 非正体积单元： 0.01322846 / 1.707547e-06° / 0; force samples: 2001.</p><p>\\wsl.localhost\Ubuntu\home\gongx\OpenFOAM\gongx14\run\OFF_LONG_QA_R1_20260928_025430</p><details><summary>所有帧场量范围</summary><pre>{
+  &quot;U&quot;: {
+    &quot;min&quot;: -0.7459334135055542,
+    &quot;max&quot;: 1.6385072469711304
+  },
+  &quot;p&quot;: {
+    &quot;min&quot;: -1.0445377826690674,
+    &quot;max&quot;: 0.5706902742385864
+  }
+}</pre></details><p><span title="Local qualification artifact; full CFD data not distributed / 本地验证文件，不分发完整仿真数据">MAT (local / 本地)</span> · <span title="Local qualification artifact; full CFD data not distributed / 本地验证文件，不分发完整仿真数据">CSV (local / 本地)</span> · <a href="evidence/eight_long_runs/round1/pressure.gif">GIF</a></p><img loading="lazy" src="evidence/eight_long_runs/round1/pressure.png" alt="Real final pressure slice round 1"></section><section><h2>2. 扩散主导的 Re1 参数端点 — laminar</h2><p>Re = 1; 0–10 s; 5120 cells; 4 MPI ranks; 21 genuine saved frames; 107520 × 8 xyztuvwp and 107520 × 6 xytuvp.</p><p>软件流程通过。尚未认证网格、时间步或模型的物理精度。</p><p>网格偏斜度 / 非正交角 / 非正体积单元： 0.01322846 / 1.707547e-06° / 0; force samples: 2001.</p><p>\\wsl.localhost\Ubuntu\home\gongx\OpenFOAM\gongx14\run\OFF_LONG_QA_R2_20260928_025430</p><details><summary>所有帧场量范围</summary><pre>{
+  &quot;U&quot;: {
+    &quot;min&quot;: -0.33689701557159424,
+    &quot;max&quot;: 1.2044965028762817
+  },
+  &quot;p&quot;: {
+    &quot;min&quot;: -2.661377429962158,
+    &quot;max&quot;: 3.4918053150177
+  }
+}</pre></details><p><span title="Local qualification artifact; full CFD data not distributed / 本地验证文件，不分发完整仿真数据">MAT (local / 本地)</span> · <span title="Local qualification artifact; full CFD data not distributed / 本地验证文件，不分发完整仿真数据">CSV (local / 本地)</span> · <a href="evidence/eight_long_runs/round2/pressure.gif">GIF</a></p><img loading="lazy" src="evidence/eight_long_runs/round2/pressure.png" alt="Real final pressure slice round 2"></section><section><h2>3. 更小内部时间步与真实暂停续算 — laminar</h2><p>Re = 200; 0–10 s; 5120 cells; 4 MPI ranks; 21 genuine saved frames; 107520 × 8 xyztuvwp and 107520 × 6 xytuvp.</p><p>软件流程通过。尚未认证网格、时间步或模型的物理精度。</p><p>网格偏斜度 / 非正交角 / 非正体积单元： 0.01322846 / 1.707547e-06° / 0; force samples: 4001.</p><p>\\wsl.localhost\Ubuntu\home\gongx\OpenFOAM\gongx14\run\OFF_LONG_QA_R3_20260928_025430</p><details><summary>所有帧场量范围</summary><pre>{
+  &quot;U&quot;: {
+    &quot;min&quot;: -0.7422699332237244,
+    &quot;max&quot;: 1.6404064893722534
+  },
+  &quot;p&quot;: {
+    &quot;min&quot;: -1.0450410842895508,
+    &quot;max&quot;: 0.570955216884613
+  }
+}</pre></details><p><span title="Local qualification artifact; full CFD data not distributed / 本地验证文件，不分发完整仿真数据">MAT (local / 本地)</span> · <span title="Local qualification artifact; full CFD data not distributed / 本地验证文件，不分发完整仿真数据">CSV (local / 本地)</span> · <a href="evidence/eight_long_runs/round3/pressure.gif">GIF</a></p><img loading="lazy" src="evidence/eight_long_runs/round3/pressure.png" alt="Real final pressure slice round 3"></section><section><h2>4. SST URANS 模型全场检查 — kOmegaSST</h2><p>Re = 3900; 0–10 s; 5120 cells; 4 MPI ranks; 21 genuine saved frames; 107520 × 8 xyztuvwp and 107520 × 6 xytuvp.</p><p>软件流程通过。尚未认证网格、时间步或模型的物理精度。</p><p>网格偏斜度 / 非正交角 / 非正体积单元： 0.01322846 / 1.707547e-06° / 0; force samples: 2001.</p><p>\\wsl.localhost\Ubuntu\home\gongx\OpenFOAM\gongx14\run\OFF_LONG_QA_R4_20260928_025430</p><details><summary>所有帧场量范围</summary><pre>{
+  &quot;U&quot;: {
+    &quot;min&quot;: -1.0916391611099243,
+    &quot;max&quot;: 1.7411881685256958
+  },
+  &quot;p&quot;: {
+    &quot;min&quot;: -1.2371187210083008,
+    &quot;max&quot;: 0.5571978092193604
+  },
+  &quot;k&quot;: {
+    &quot;min&quot;: 0.00012398672697599977,
+    &quot;max&quot;: 0.07136700302362442
+  },
+  &quot;omega&quot;: {
+    &quot;min&quot;: 0.1903407722711563,
+    &quot;max&quot;: 20.38353729248047
+  },
+  &quot;nut&quot;: {
+    &quot;min&quot;: 6.263704563025385e-06,
+    &quot;max&quot;: 0.012603934854269028
+  }
+}</pre></details><p><span title="Local qualification artifact; full CFD data not distributed / 本地验证文件，不分发完整仿真数据">MAT (local / 本地)</span> · <span title="Local qualification artifact; full CFD data not distributed / 本地验证文件，不分发完整仿真数据">CSV (local / 本地)</span> · <a href="evidence/eight_long_runs/round4/pressure.gif">GIF</a></p><img loading="lazy" src="evidence/eight_long_runs/round4/pressure.png" alt="Real final pressure slice round 4"></section><section><h2>5. 高 Re 参数端点；不作精度认证 — kOmegaSST</h2><p>Re = 10000000; 0–10 s; 5120 cells; 4 MPI ranks; 21 genuine saved frames; 107520 × 8 xyztuvwp and 107520 × 6 xytuvp.</p><p>软件流程通过。尚未认证网格、时间步或模型的物理精度。</p><p>网格偏斜度 / 非正交角 / 非正体积单元： 0.01322846 / 1.707547e-06° / 0; force samples: 2001.</p><p>\\wsl.localhost\Ubuntu\home\gongx\OpenFOAM\gongx14\run\OFF_LONG_QA_R5_20260928_025430</p><details><summary>所有帧场量范围</summary><pre>{
+  &quot;U&quot;: {
+    &quot;min&quot;: -1.1100282669067383,
+    &quot;max&quot;: 1.7490841150283813
+  },
+  &quot;p&quot;: {
+    &quot;min&quot;: -1.259128451347351,
+    &quot;max&quot;: 0.5571740865707397
+  },
+  &quot;k&quot;: {
+    &quot;min&quot;: 0.0001263119775103405,
+    &quot;max&quot;: 0.07084378600120544
+  },
+  &quot;omega&quot;: {
+    &quot;min&quot;: 0.19032330811023712,
+    &quot;max&quot;: 22.063560485839844
+  },
+  &quot;nut&quot;: {
+    &quot;min&quot;: 4.093604275112739e-06,
+    &quot;max&quot;: 0.009999999776482582
+  }
+}</pre></details><p><span title="Local qualification artifact; full CFD data not distributed / 本地验证文件，不分发完整仿真数据">MAT (local / 本地)</span> · <span title="Local qualification artifact; full CFD data not distributed / 本地验证文件，不分发完整仿真数据">CSV (local / 本地)</span> · <a href="evidence/eight_long_runs/round5/pressure.gif">GIF</a></p><img loading="lazy" src="evidence/eight_long_runs/round5/pressure.png" alt="Real final pressure slice round 5"></section><section><h2>6. 三维 LES 接口与代数 SGS 场 — WALE</h2><p>Re = 3900; 0–10 s; 5120 cells; 4 MPI ranks; 21 genuine saved frames; 107520 × 8 xyztuvwp and 107520 × 6 xytuvp.</p><p>软件流程通过。尚未认证网格、时间步或模型的物理精度。</p><p>网格偏斜度 / 非正交角 / 非正体积单元： 0.01322846 / 1.707547e-06° / 0; force samples: 2001.</p><p>\\wsl.localhost\Ubuntu\home\gongx\OpenFOAM\gongx14\run\OFF_LONG_QA_R6_20260928_025430</p><details><summary>所有帧场量范围</summary><pre>{
+  &quot;U&quot;: {
+    &quot;min&quot;: -1.1098240613937378,
+    &quot;max&quot;: 1.7389862537384033
+  },
+  &quot;p&quot;: {
+    &quot;min&quot;: -1.2381706237792969,
+    &quot;max&quot;: 0.5574012994766235
+  },
+  &quot;nut&quot;: {
+    &quot;min&quot;: 6.726595683589779e-15,
+    &quot;max&quot;: 0.0059895762242376804
+  }
+}</pre></details><p><span title="Local qualification artifact; full CFD data not distributed / 本地验证文件，不分发完整仿真数据">MAT (local / 本地)</span> · <span title="Local qualification artifact; full CFD data not distributed / 本地验证文件，不分发完整仿真数据">CSV (local / 本地)</span> · <a href="evidence/eight_long_runs/round6/pressure.gif">GIF</a></p><img loading="lazy" src="evidence/eight_long_runs/round6/pressure.png" alt="Real final pressure slice round 6"></section><section><h2>7. 混合模型接口、滤波尺度与必需场 — kOmegaSSTDES</h2><p>Re = 3900; 0–10 s; 5120 cells; 4 MPI ranks; 21 genuine saved frames; 107520 × 8 xyztuvwp and 107520 × 6 xytuvp.</p><p>软件流程通过。尚未认证网格、时间步或模型的物理精度。</p><p>网格偏斜度 / 非正交角 / 非正体积单元： 0.01322846 / 1.707547e-06° / 0; force samples: 2001.</p><p>\\wsl.localhost\Ubuntu\home\gongx\OpenFOAM\gongx14\run\OFF_LONG_QA_R7_20260928_025430</p><details><summary>所有帧场量范围</summary><pre>{
+  &quot;U&quot;: {
+    &quot;min&quot;: -1.0981426239013672,
+    &quot;max&quot;: 1.7411881685256958
+  },
+  &quot;p&quot;: {
+    &quot;min&quot;: -1.237116813659668,
+    &quot;max&quot;: 0.5572061538696289
+  },
+  &quot;k&quot;: {
+    &quot;min&quot;: 0.00010647044837241992,
+    &quot;max&quot;: 0.021416332572698593
+  },
+  &quot;omega&quot;: {
+    &quot;min&quot;: 0.1903391033411026,
+    &quot;max&quot;: 18.71284294128418
+  },
+  &quot;nut&quot;: {
+    &quot;min&quot;: 6.215658231667476e-06,
+    &quot;max&quot;: 0.0030398909002542496
+  }
+}</pre></details><p><span title="Local qualification artifact; full CFD data not distributed / 本地验证文件，不分发完整仿真数据">MAT (local / 本地)</span> · <span title="Local qualification artifact; full CFD data not distributed / 本地验证文件，不分发完整仿真数据">CSV (local / 本地)</span> · <a href="evidence/eight_long_runs/round7/pressure.gif">GIF</a></p><img loading="lazy" src="evidence/eight_long_runs/round7/pressure.png" alt="Real final pressure slice round 7"></section><section><h2>8. 隔离原生模型 10 秒运行与 U^4 平均场 — dynamicLagrangian</h2><p>Re = 3900; 0–10 s; 5120 cells; 4 MPI ranks; 21 genuine saved frames; 107520 × 8 xyztuvwp and 107520 × 6 xytuvp.</p><p>软件流程通过。尚未认证网格、时间步或模型的物理精度。</p><p>网格偏斜度 / 非正交角 / 非正体积单元： 0.01322846 / 1.707547e-06° / 0; force samples: 2001.</p><p>\\wsl.localhost\Ubuntu\home\gongx\OpenFOAM\gongx14\run\OFF_LONG_QA_R8_20260928_025430</p><details><summary>所有帧场量范围</summary><pre>{
+  &quot;U&quot;: {
+    &quot;min&quot;: -1.1113890409469604,
+    &quot;max&quot;: 1.7228076457977295
+  },
+  &quot;p&quot;: {
+    &quot;min&quot;: -1.2324631214141846,
+    &quot;max&quot;: 0.5763183832168579
+  },
+  &quot;flm&quot;: {
+    &quot;min&quot;: 1.030139706870159e-08,
+    &quot;max&quot;: 0.2160061001777649
+  },
+  &quot;fmm&quot;: {
+    &quot;min&quot;: 0.000517403706908226,
+    &quot;max&quot;: 28.42632293701172
+  },
+  &quot;nut&quot;: {
+    &quot;min&quot;: 1.3068121029746749e-09,
+    &quot;max&quot;: 0.013804689981043339
+  }
+}</pre></details><p><span title="Local qualification artifact; full CFD data not distributed / 本地验证文件，不分发完整仿真数据">MAT (local / 本地)</span> · <span title="Local qualification artifact; full CFD data not distributed / 本地验证文件，不分发完整仿真数据">CSV (local / 本地)</span> · <a href="evidence/eight_long_runs/round8/pressure.gif">GIF</a></p><img loading="lazy" src="evidence/eight_long_runs/round8/pressure.png" alt="Real final pressure slice round 8"></section></main></html>

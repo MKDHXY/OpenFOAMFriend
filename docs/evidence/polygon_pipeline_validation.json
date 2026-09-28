@@ -1,0 +1,22 @@
+{
+  "release": "v20260928_023043",
+  "backend": "Gmsh -> gmshToFoam",
+  "actual_geometry": "pentagonal extruded obstacle",
+  "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_POLYGON_FLOW_20260928_030359",
+  "cells": 6600,
+  "cores": 4,
+  "end_time_s": 0.05,
+  "genuine_frames": 3,
+  "quality": {
+    "cells": 6600.0,
+    "aspect_ratio": 1.993628374,
+    "non_orthogonality": 22.29907157,
+    "skewness": 0.2692664925,
+    "passed": true,
+    "log": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_POLYGON_FLOW_20260928_030359\\log.checkMesh",
+    "sets": []
+  },
+  "max_observed_Co": 0.02413486251,
+  "CSV_MAT_PNG_GIF": true,
+  "errors": []
+}

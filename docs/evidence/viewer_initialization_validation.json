@@ -1,0 +1,9 @@
+{
+  "release": "v20260928_023043",
+  "canonical_selection_on_construction": true,
+  "real_case_frames": 21,
+  "end_time_s": 10,
+  "all_three_real_slice_planes": true,
+  "empty_selection_falls_back_to_full_volume": true,
+  "errors": []
+}

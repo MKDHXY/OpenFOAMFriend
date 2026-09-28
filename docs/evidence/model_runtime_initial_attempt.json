@@ -1,0 +1,454 @@
+{
+  "attempt": "20260927_042019",
+  "all_24_passed": false,
+  "models": [
+    {
+      "model": "laminar",
+      "family": "Laminar",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_laminar_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "SpalartAllmaras",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_SpalartAllmaras_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "nuTilda",
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "kEpsilon",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_kEpsilon_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "k",
+        "epsilon",
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "RNGkEpsilon",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_RNGkEpsilon_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "k",
+        "epsilon",
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "realizableKE",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_realizableKE_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "k",
+        "epsilon",
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "LaunderSharmaKE",
+      "family": "RAS",
+      "state": "FAILED",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_LaunderSharmaKE_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2.47584867477417,
+      "required_fields": [
+        "k",
+        "epsilon",
+        "nut"
+      ],
+      "errors": [
+        ") [0x721770601f33]\n[Chocological:06822] [ 8] /opt/openfoam14/platforms/linux64GccDPInt32Opt/lib/libincompressibleMomentumTransportModels.so(_ZN4Foam9RASModels15LaunderSharmaKEINS_36incompressibleMomentumTransportModelEE10correctNutEv+0x60) [0x7217706023c0]\n[Chocological:06822] [ 9] /opt/openfoam14/platforms/linux64GccDPInt32Opt/lib/libincompressibleFluidSolver.so(_ZN4Foam7solvers19incompressibleFluidC2ERNS_6fvMeshE+0xe31) [0x721770b284b1]\n[Chocological:06822] [10] /opt/openfoam14/platforms/linux64GccDPInt32Opt/lib/libincompressibleFluidSolver.so(_ZN4Foam6solver27addfvMeshConstructorToTableINS_7solvers19incompressibleFluidEE3NewERNS_6fvMeshE+0x2c) [0x721770b2c4fc]\n[Chocological:06822] [11]  in \"/usr/lib/x86_64-linux-gnu/libc.so.6\"\n[1] #13  __libc_start_main/opt/openfoam14/platforms/linux64GccDPInt32Opt/lib/libfiniteVolume.so(_ZN4Foam6solver3NewERKNS_4wordERNS_6fvMeshE+0x365) [0x721777efcd95]\n[Chocological:06822] [12] foamRun(+0x52cc) [0x57f1a0e602cc]\n[Chocological:06822] [13] /usr/lib/x86_64-linux-gnu/libc.so.6(+0x2a601) [0x721774c2a601]\n[Chocological:06822] [14] /usr/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x88) [0x721774c2a718]\n[Chocological:06822] [15] foamRun(+0x5ae5) [0x57f1a0e60ae5]\n[Chocological:06822] *** End of error message ***\n in \"/usr/lib/x86_64-linux-gnu/libc.so.6\"\n[1] #14  ? in \"/opt/openfoam14/platforms/linux64GccDPInt32Opt/bin/foamRun\"\n[Chocological:06820] *** Process received signal ***\n[Chocological:06820] Signal: Floating point exception (8)\n[Chocological:06820] Signal code:  (-6)\n[Chocological:06820] Failing at address: 0x3e800001aa4\n[Chocological:06820] [ 0] /usr/lib/x86_64-linux-gnu/libc.so.6(+0x45cb0) [0x7c2fb8c45cb0]\n[Chocological:06820] [ 1] /usr/lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x11c) [0x7c2fb8ca61ac]\n[Chocological:06820] [ 2] /usr/lib/x86_64-linux-gnu/libc.so.6(gsignal+0x1e) [0x7c2fb8c45b7e]\n[Chocological:06820] [ 3] /usr/lib/x86_64-linux-gnu/libc.so.6(+0x45cb0) [0x7c2fb8c45cb0]\n[Chocological:06820] [ 4] /opt/openfoam14/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam6divideERNS_5FieldIdEERKNS_5UListIdEES6_+0x95) [0x7c2fb9cc2945]\n[Chocological:06820] [ 5] /opt/openfoam14/platforms/linux64GccDPInt32Opt/lib/libincompressibleMomentumTransportModels.so(_ZN4Foam6divideINS_6fvMeshENS_5FieldES2_S2_EEvRNS_14GeometricFieldIdT_T0_EERKNS3_IdS4_T1_EERKNS3_IdS4_T2_EE+0xb4) [0x7c2fb45ea6d4]\n[Chocological:06820] [ 6] /opt/openfoam14/platforms/linux64GccDPInt32Opt/lib/libincompressibleMomentumTransportModels.so(_ZN4FoamdvINS_6fvMeshENS_5FieldES2_EENS_3tmpINS_14GeometricFieldIdT_S2_EEEERKNS3_INS4_IdS5_T0_EEEERKNS3_INS4_IdS5_T1_EEEE+0x28e) [0x7c2fb46014ee]\n[Chocological:06820] [ 7] /opt/openfoam14/platforms/linux64GccDPInt32Opt/lib/libincompressibleMomentumTransportModels.so(_ZNK4Foam9RASModels15LaunderSharmaKEINS_36incompressibleMomentumTransportModelEE3fMuEv+0xd3) [0x7c2fb4601f33]\n[Chocological:06820] [ 8] /opt/openfoam14/platforms/linux64GccDPInt32Opt/lib/libincompressibleMomentumTransportModels.so(_ZN4Foam9RASModels15LaunderSharmaKEINS_36incompressibleMomentumTransportModelEE10correctNutEv+0x60) [0x7c2fb46023c0]\n[Chocological:06820] [ 9] /opt/openfoam14/platforms/linux64GccDPInt32Opt/lib/libincompressibleFluidSolver.so(_ZN4Foam7solvers19incompressibleFluidC2ERNS_6fvMeshE+0xe31) [0x7c2fb4a3d4b1]\n[Chocological:06820] [10] /opt/openfoam14/platforms/linux64GccDPInt32Opt/lib/libincompressibleFluidSolver.so(_ZN4Foam6solver27addfvMeshConstructorToTableINS_7solvers19incompressibleFluidEE3NewERNS_6fvMeshE+0x2c) [0x7c2fb4a414fc]\n[Chocological:06820] [11] /opt/openfoam14/platforms/linux64GccDPInt32Opt/lib/libfiniteVolume.so(_ZN4Foam6solver3NewERKNS_4wordERNS_6fvMeshE+0x365) [0x7c2fbbefcd95]\n[Chocological:06820] [12] foamRun(+0x52cc) [0x58b5be94f2cc]\n[Chocological:06820] [13] /usr/lib/x86_64-linux-gnu/libc.so.6(+0x2a601) [0x7c2fb8c2a601]\n[Chocological:06820] [14] /usr/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x88) [0x7c2fb8c2a718]\n[Chocological:06820] [15] foamRun(+0x5ae5) [0x58b5be94fae5]\n[Chocological:06820] *** End of error message ***\n--------------------------------------------------------------------------\nSorry!  You were supposed to get help about:\n    prun:proc-aborted-strsignal\nBut I couldn't open the help file:\n    /usr/lib/x86_64-linux-gnu/pmix2/share/pmix/help-prun.txt: No such file or directory\n    /usr/lib/x86_64-linux-gnu/prrte3/share/prte/help-prun.txt: No such file or directory.\nSorry!\n--------------------------------------------------------------------------\n\u0000"
+      ]
+    },
+    {
+      "model": "kOmega",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_kOmega_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "k",
+        "omega",
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "kOmega2006",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_kOmega2006_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "k",
+        "omega",
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "kOmegaSST",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_kOmegaSST_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "k",
+        "omega",
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "kOmegaSSTSAS",
+      "family": "RAS",
+      "state": "FAILED",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_kOmegaSSTSAS_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2.420008897781372,
+      "required_fields": [
+        "k",
+        "omega",
+        "nut"
+      ],
+      "errors": [
+        "/*---------------------------------------------------------------------------*\\\n  =========                 |\n  \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox\n   \\\\    /   O peration     | Website:  https://openfoam.org\n    \\\\  /    A nd           | Version:  14\n     \\\\/     M anipulation  |\n\\*---------------------------------------------------------------------------*/\nBuild  : 14-7b05503f98a8\nExec   : foamRun -solver incompressibleFluid -parallel\nDate   : Sep 27 2026\nTime   : 04:21:30\nHost   : \"Chocological\"\nPID    : 9599\nI/O    : uncollated\nCase   : /home/developer/OpenFOAM/developer14/run/OFF_MODEL_kOmegaSSTSAS_20260927_042019\nnProcs : 4\nSlaves : \n3\n(\n\"Chocological.9600\"\n\"Chocological.9601\"\n\"Chocological.9602\"\n)\n\nPstream initialised with:\n    floatTransfer      : false\n    nProcsSimpleSum    : 0\n    commsType          : nonBlocking\n    polling iterations : 0\nsigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).\nfileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)\nallowSystemOperations : Allowing user-supplied system call operations\n\n// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //\nCreate time\n\nCreate mesh for time = 0\n\n\nSelecting solver incompressibleFluid\n\nSelecting viscosity model constant\n\nSelecting momentum transport model type RAS\n    Selecting RAS turbulence model kOmegaSSTSAS\n\n\n--> FOAM FATAL IO ERROR: \nkeyword delta is undefined in dictionary \"/home/developer/OpenFOAM/developer14/run/OFF_MODEL_kOmegaSSTSAS_20260927_042019/constant/momentumTransport!RAS\"\n\nfile: /home/developer/OpenFOAM/developer14/run/OFF_MODEL_kOmegaSSTSAS_20260927_042019/constant/momentumTransport!RAS from line 8 to 12.\n\n    From function const Foam::entry& Foam::dictionary::lookupEntry(const Foam::word&, bool, bool) const\n    in file db/dictionary/dictionary.C at line 636.\n\nFOAM parallel run exiting\n\n--------------------------------------------------------------------------\nMPI_ABORT was invoked on rank 2 in communicator MPI COMM 3 SPLIT FROM 0\n  Proc: [[60600,1],2]\n  Errorcode: 1\n\nNOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.\nYou may or may not see output from other processes, depending on\nexactly when Open MPI kills them.\n--------------------------------------------------------------------------\n\u0000--------------------------------------------------------------------------\nSorry!  You were supposed to get help about:\n    prun:proc-ordered-abort\nBut I couldn't open the help file:\n    /usr/lib/x86_64-linux-gnu/pmix2/share/pmix/help-prun.txt: No such file or directory\n    /usr/lib/x86_64-linux-gnu/prrte3/share/prte/help-prun.txt: No such file or directory.\nSorry!\n--------------------------------------------------------------------------\n\u0000"
+      ]
+    },
+    {
+      "model": "kOmegaSSTLM",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_kOmegaSSTLM_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "k",
+        "omega",
+        "nut",
+        "ReThetat",
+        "gammaInt"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "v2f",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_v2f_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "k",
+        "epsilon",
+        "v2",
+        "f",
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "LRR",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_LRR_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "R",
+        "epsilon",
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "SSG",
+      "family": "RAS",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_SSG_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "R",
+        "epsilon",
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "Smagorinsky",
+      "family": "LES",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_Smagorinsky_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "WALE",
+      "family": "LES",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_WALE_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "kEqn",
+      "family": "LES",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_kEqn_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "k",
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "dynamicKEqn",
+      "family": "LES",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_dynamicKEqn_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "k",
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "dynamicLagrangian",
+      "family": "LES",
+      "state": "FAILED",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_dynamicLagrangian_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2.418513536453247,
+      "required_fields": [
+        "flm",
+        "fmm",
+        "nut"
+      ],
+      "errors": [
+        "mm(grad(simpleFilteredField)))))*dev(symm(grad(simpleFilteredField))))))))[0 3 -4 0 0 0 0] ]\n[0] \n[0]     From function void Foam::checkMethod(const fvMatrix<Type>&, const DimensionedField<Type, fvMesh>&, const char*) [with Type = double]\n[0]     in file lnInclude/fvMatrix.C at line 1461.\n[0] \nFOAM parallel run aborting\n[0] \n[1] \nFOAM parallel run aborting\n[1] \n[3] [1] #0  #0  Foam::error::printStack(Foam::Ostream&)[2] #0  Foam::error::printStack(Foam::Ostream&)Foam::error::printStack(Foam::Ostream&)[0] #0  Foam::error::printStack(Foam::Ostream&) at  at ??:?\n??:?\n[0] #1[2]   Foam::error::abort()#1  Foam::error::abort() at ??:?\n[1] #1  Foam::error::abort() at ??:?\n[3] #1  Foam::error::abort() at ??:?\n at ??:?\n[0] #2  void Foam::checkMethod<double>(Foam::fvMatrix<double> const&, Foam::DimensionedField<double, Foam::fvMesh, Foam::Field> const&, char const*)[1] #2  void Foam::checkMethod<double>(Foam::fvMatrix<double> const&, Foam::DimensionedField<double, Foam::fvMesh, Foam::Field> const&, char const*) at ??:?\n at ??:?\n[3] #2  void Foam::checkMethod<double>(Foam::fvMatrix<double> const&, Foam::DimensionedField<double, Foam::fvMesh, Foam::Field> const&, char const*)[2] #2  void Foam::checkMethod<double>(Foam::fvMatrix<double> const&, Foam::DimensionedField<double, Foam::fvMesh, Foam::Field> const&, char const*) at ??:?\n[0] #3  Foam::tmp<Foam::fvMatrix<double> > Foam::operator-<double>(Foam::tmp<Foam::GeometricField<double, Foam::fvMesh, Foam::Field> > const&, Foam::tmp<Foam::fvMatrix<double> > const&) at ??:?\n[2] #3  Foam::tmp<Foam::fvMatrix<double> > Foam::operator-<double>(Foam::tmp<Foam::GeometricField<double, Foam::fvMesh, Foam::Field> > const&, Foam::tmp<Foam::fvMatrix<double> > const&) at ??:?\n[3] #3  Foam::tmp<Foam::fvMatrix<double> > Foam::operator-<double>(Foam::tmp<Foam::GeometricField<double, Foam::fvMesh, Foam::Field> > const&, Foam::tmp<Foam::fvMatrix<double> > const&) at ??:?\n[1] #3  Foam::tmp<Foam::fvMatrix<double> > Foam::operator-<double>(Foam::tmp<Foam::GeometricField<double, Foam::fvMesh, Foam::Field> > const&, Foam::tmp<Foam::fvMatrix<double> > const&) at ??:?\n[0] #4  Foam::LESModels::dynamicLagrangian<Foam::incompressibleMomentumTransportModel>::correct() at ??:?\n[2] #4  Foam::LESModels::dynamicLagrangian<Foam::incompressibleMomentumTransportModel>::correct() at ??:?\n[1] #4  Foam::LESModels::dynamicLagrangian<Foam::incompressibleMomentumTransportModel>::correct() at ??:?\n[3] #4  Foam::LESModels::dynamicLagrangian<Foam::incompressibleMomentumTransportModel>::correct() at ??:?\n[1] #5   at ??:?\n[0] #5   at ??:?\n[2] #5   at ??:?\n[3] #5  ???? in \"/opt/openfoam14/platforms/linux64GccDPInt32Opt/bin/foamRun\"\n[0] #6  ? in \"/opt/openfoam14/platforms/linux64GccDPInt32Opt/bin/foamRun\"\n[1] #6  ? in \"/opt/openfoam14/platforms/linux64GccDPInt32Opt/bin/foamRun\"\n[3] #6  ? in \"/opt/openfoam14/platforms/linux64GccDPInt32Opt/bin/foamRun\"\n[2] #6  ? in \"/usr/lib/x86_64-linux-gnu/libc.so.6\"\n[1] #7  __libc_start_main in \"/usr/lib in \"/usr/lib/x86_64-linux-gnu/libc.so.6\"\n/x86_64-linux-gnu/libc.so.6\"\n[2] #7  [3] #7  __libc_start_main__libc_start_main in \"/usr/lib/x86_64-linux-gnu/libc.so.6\"\n[0] #7  __libc_start_main in \"/usr/lib/x86_64-linux-gnu/libc.so.6\"\n[2] #8   in \"/usr/lib/x86_64-linux-gnu/libc.so.6\"\n[3] #8   in \"/usr/lib/x86_64-linux-gnu/libc.so.6\"\n[1] #8   in \"/usr/lib/x86_64-linux-gnu/libc.so.6\"\n[0] #8  ???? in  in \"/opt/openfoam14/platforms/lin\"/opt/openfoam14/platforms/linux64GccDPInt32Opt/bin/foamRun\"\nux64GccDPInt32Opt/bin/foamRun\"\n--------------------------------------------------------------------------\nMPI_ABORT was invoked on rank 1 in communicator MPI COMM 3 SPLIT FROM 0\n  Proc: [[32792,1],1]\n  Errorcode: 1\n\nNOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.\nYou may or may not see output from other processes, depending on\nexactly when Open MPI kills them.\n--------------------------------------------------------------------------\n\u0000 in \"/opt/openfoam14/platforms/linux64GccDPInt32Opt/bin/foamRun\"\n in \"/opt/openfoam14/platforms/linux64GccDPInt32Opt/bin/foamRun\"\n--------------------------------------------------------------------------\nSorry!  You were supposed to get help about:\n    prun:proc-ordered-abort\nBut I couldn't open the help file:\n    /usr/lib/x86_64-linux-gnu/pmix2/share/pmix/help-prun.txt: No such file or directory\n    /usr/lib/x86_64-linux-gnu/prrte3/share/prte/help-prun.txt: No such file or directory.\nSorry!\n--------------------------------------------------------------------------\n\u0000"
+      ]
+    },
+    {
+      "model": "DeardorffDiffStress",
+      "family": "LES",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_DeardorffDiffStress_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "R",
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "SpalartAllmarasDES",
+      "family": "Hybrid",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_SpalartAllmarasDES_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "nuTilda",
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "SpalartAllmarasDDES",
+      "family": "Hybrid",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_SpalartAllmarasDDES_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 1,
+      "required_fields": [
+        "nuTilda",
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "SpalartAllmarasIDDES",
+      "family": "Hybrid",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_SpalartAllmarasIDDES_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "nuTilda",
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    },
+    {
+      "model": "kOmegaSSTDES",
+      "family": "Hybrid",
+      "state": "DONE",
+      "case": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_MODEL_kOmegaSSTDES_20260927_042019",
+      "cores": 4,
+      "cells": 5120,
+      "end_time": 0.002,
+      "runtime_s": 2,
+      "required_fields": [
+        "k",
+        "omega",
+        "nut"
+      ],
+      "errors": [
+        "AssertionError()"
+      ]
+    }
+  ],
+  "scope": "4-step software integration smoke tests; no physical turbulence/wake accuracy claim",
+  "errors": [
+    "laminar",
+    "SpalartAllmaras",
+    "kEpsilon",
+    "RNGkEpsilon",
+    "realizableKE",
+    "LaunderSharmaKE",
+    "kOmega",
+    "kOmega2006",
+    "kOmegaSST",
+    "kOmegaSSTSAS",
+    "kOmegaSSTLM",
+    "v2f",
+    "LRR",
+    "SSG",
+    "Smagorinsky",
+    "WALE",
+    "kEqn",
+    "dynamicKEqn",
+    "dynamicLagrangian",
+    "DeardorffDiffStress",
+    "SpalartAllmarasDES",
+    "SpalartAllmarasDDES",
+    "SpalartAllmarasIDDES",
+    "kOmegaSSTDES"
+  ]
+}

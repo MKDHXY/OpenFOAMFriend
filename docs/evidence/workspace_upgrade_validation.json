@@ -1,0 +1,95 @@
+{
+  "welcome_page": true,
+  "two_click_line": true,
+  "drag_line_preserved": true,
+  "cancel_undo": true,
+  "parameter_code_editor": true,
+  "foam_function_key_adjacency": true,
+  "busy_indicator": true,
+  "WSL_discovery": [
+    {
+      "distro": "Ubuntu",
+      "user": "developer",
+      "home": "/home/developer",
+      "cores": 4,
+      "bashrcs": [
+        "/opt/openfoam14/etc/bashrc"
+      ],
+      "runs": [
+        "/home/developer/OpenFOAM/developer14/run"
+      ]
+    },
+    {
+      "distro": "OFFPackageQA_20260928_164718",
+      "user": "off",
+      "home": "/home/off",
+      "cores": 4,
+      "bashrcs": [
+        "/opt/openfoam14/etc/bashrc"
+      ],
+      "runs": [
+        "/home/off/OpenFOAM/off14/run"
+      ]
+    },
+    {
+      "distro": "OFFPackageBuild_20260928_164718",
+      "user": "off",
+      "home": "/home/off",
+      "cores": 4,
+      "bashrcs": [
+        "/opt/openfoam14/etc/bashrc"
+      ],
+      "runs": [
+        "/home/off/OpenFOAM/off14/run"
+      ]
+    },
+    {
+      "distro": "OFFPackageInstallerQA_20260928_164718",
+      "user": "off",
+      "home": "/home/off",
+      "cores": 4,
+      "bashrcs": [
+        "/opt/openfoam14/etc/bashrc"
+      ],
+      "runs": [
+        "/home/off/OpenFOAM/off14/run"
+      ]
+    }
+  ],
+  "actual_terminal_OpenFOAM14": true,
+  "standard_views": true,
+  "play_pause_rate": true,
+  "real_fields": [
+    "p",
+    "speed",
+    "u",
+    "v",
+    "vorticity",
+    "vorticity_magnitude",
+    "vorticity_x",
+    "vorticity_y",
+    "vorticity_z",
+    "w"
+  ],
+  "analytic_curl_interior_max_abs_error": 2.235173979237004e-07,
+  "analytic_curl_whole_domain_max_abs_error": 2.0,
+  "curl_limit": "Cell-gradient boundary reconstruction underestimates this constant curl at the outer cells; do not use boundary values as exact wall vorticity.",
+  "complete_case_export": {
+    "source": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_RELEASE_R1_20260928_122043\\OFF_RELEASE_R1_20260928_122043.foam",
+    "field_times_s": [
+      0.0,
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05
+    ],
+    "complete": true,
+    "marker": "D:\\UoM\\openfoamfriend\\v20260928_164718\\evidence\\complete_foam_case_171242\\complete_foam_case_171242.foam",
+    "native_model_sources": false,
+    "native_note": "If off_native exists, source the same Foundation 14 installation and run wmake libso off_native/dynamicLagrangian before solving on a different host."
+  },
+  "reopened_export_cells": 5120,
+  "reopened_export_frames": 6,
+  "errors": []
+}

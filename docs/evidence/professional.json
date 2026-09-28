@@ -1,0 +1,13 @@
+{
+  "construction_line_polyline_pointer_test": true,
+  "undo_redo_serialization": true,
+  "monotone_spacing_formula": true,
+  "negative_direction_endpoints": true,
+  "initial_U_verified_by_foamDictionary": "uniform ( 0.9 0 0 )",
+  "SSH_host_key_enforced": true,
+  "Slurm_script_bash_syntax": true,
+  "SSH_bundle_verified": true,
+  "real_cluster_tested": false,
+  "remote_job_submitted": false,
+  "errors": []
+}

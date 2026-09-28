@@ -1,0 +1,85 @@
+{
+  "release": "v20260928_120205",
+  "real_mouse_two_click_lines": true,
+  "shared_nodes_split_partition_two_regions": true,
+  "per_region_independent_assignment": true,
+  "erase_exact_segment_undo_redo": true,
+  "true_arc_three_click_and_split": true,
+  "draft_save_load_SI": true,
+  "bilingual_manual_controls": true,
+  "open_topology_blocks_activation": true,
+  "three_real_3D_four_core_pipelines": [
+    {
+      "case": "OFF_TOPOLOGY_R1_20260928_121707",
+      "method": "Manual topology (blockMesh)",
+      "cells": 5120,
+      "cores": 4,
+      "simulated_time_s": 0.05,
+      "frames": 6,
+      "quality": {
+        "cells": 5120.0,
+        "aspect_ratio": 4.995543192,
+        "non_orthogonality": 1.478779333e-06,
+        "skewness": 0.09960984046,
+        "passed": true,
+        "log": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_TOPOLOGY_R1_20260928_121707\\log.checkMesh",
+        "sets": []
+      },
+      "MAT_rows": 30720,
+      "finite": true,
+      "case_folder": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_TOPOLOGY_R1_20260928_121707",
+      "max_observed_Co": 0.01049055705,
+      "state": "DONE"
+    },
+    {
+      "case": "OFF_TOPOLOGY_R2_20260928_121707",
+      "method": "Manual topology (Gmsh)",
+      "cells": 5120,
+      "cores": 4,
+      "simulated_time_s": 0.08,
+      "frames": 5,
+      "quality": {
+        "cells": 5120.0,
+        "aspect_ratio": 5.149137537,
+        "non_orthogonality": 17.37354128,
+        "skewness": 0.2738817701,
+        "passed": true,
+        "log": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_TOPOLOGY_R2_20260928_121707\\log.checkMesh",
+        "sets": []
+      },
+      "MAT_rows": 25600,
+      "finite": true,
+      "case_folder": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_TOPOLOGY_R2_20260928_121707",
+      "max_observed_Co": 0.01111153496,
+      "state": "DONE"
+    },
+    {
+      "case": "OFF_TOPOLOGY_R3_20260928_121707",
+      "method": "Manual topology (blockMesh)",
+      "cells": 5376,
+      "cores": 4,
+      "simulated_time_s": 1.0,
+      "frames": 11,
+      "quality": {
+        "cells": 5376.0,
+        "aspect_ratio": 4.871882784,
+        "non_orthogonality": 1.478779333e-06,
+        "skewness": 0.09633965063,
+        "passed": true,
+        "log": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_TOPOLOGY_R3_20260928_121707\\log.checkMesh",
+        "sets": []
+      },
+      "MAT_rows": 59136,
+      "finite": true,
+      "case_folder": "\\\\wsl.localhost\\Ubuntu\\home\\developer\\OpenFOAM\\developer14\\run\\OFF_TOPOLOGY_R3_20260928_121707",
+      "max_observed_Co": 0.01075337537,
+      "state": "DONE"
+    }
+  ],
+  "pause_resume": {
+    "before": 0.008,
+    "after": 0.008
+  },
+  "max_reserved_cores": 4,
+  "errors": []
+}

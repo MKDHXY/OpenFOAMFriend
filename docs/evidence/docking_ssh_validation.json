@@ -1,0 +1,14 @@
+{
+  "default_bottom": true,
+  "actual_pointer_drag_top_and_bottom": true,
+  "restart_position_retained": true,
+  "reset_returns_bottom": true,
+  "ssh_configuration_help": true,
+  "hidden_dialog_polling": true,
+  "reopened_dialog_reused": true,
+  "persisted_job_polling_resumed": true,
+  "elapsed_scheduler_details": true,
+  "no_accidental_submission": true,
+  "ssh_transport_test": "fixture only; no real cluster contacted",
+  "errors": []
+}
