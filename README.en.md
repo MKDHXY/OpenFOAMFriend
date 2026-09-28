@@ -12,6 +12,65 @@ A Windows desktop workbench for geometry, mesh design, OpenFOAM execution and sc
 
 [Download](https://mkdhxy.github.io/OpenFOAMFriend/) · [Releases](https://github.com/MKDHXY/OpenFOAMFriend/releases/tag/v0.17.0) · [Help](https://mkdhxy.github.io/OpenFOAMFriend/help.html) · [Questions and suggestions](https://github.com/MKDHXY/OpenFOAMFriend/issues) · [Full license](LICENSE)
 
+### Bring your OpenFOAM workflow into one visual workspace
+
+**Design geometry → Build a mesh → Run in parallel → Inspect and export**
+
+**[Download FULL](https://github.com/MKDHXY/OpenFOAMFriend/releases/download/v0.17.0/OpenFOAMFriend_FULL_v0.17.0_windows_x64.zip)** · **[Download LITE](https://github.com/MKDHXY/OpenFOAMFriend/releases/download/v0.17.0/OpenFOAMFriend_LITE_v0.17.0_windows_x64.zip)** · [Quickstart](https://mkdhxy.github.io/OpenFOAMFriend/quickstart_EN.html)
+
+![OpenFOAM Friend actual geometry workbench](docs/media/showcase/workbench_en.png)
+
+| Design and mesh | Run and manage | Research and data |
+| --- | --- | --- |
+| Dimensioned sketches, manual topology, blockMesh / Gmsh, uniform and graded spacing | WSL environment, CPU budgets, PIMPLE, model settings and task queue | Mesh quality, saved-field visualisation, CSV / GIF / MAT / .foam exports |
+
+## See it in action
+
+### Draw geometry. Control the mesh.
+
+Keep the model and flow domain visible while editing nodes, lines, arcs and regions. Assign edge divisions, graded spacing and boundary patches, with guided and expert workflows.
+
+![Manual cylinder topology with region and edge controls](docs/media/showcase/manual_mesh_en.png)
+
+### Inspect real meshes and saved fields
+
+Review mesh quality and locate offending faces. Switch velocity, pressure or vorticity, with adjustable colour maps and saved-field playback. These are example views exported by the application.
+
+| Mesh quality · skewness | Field view · vorticity_z |
+| --- | --- |
+| [![Actual mesh quality view](docs/media/showcase/mesh_quality.png)](docs/media/showcase/mesh_quality.png) | [![Three-dimensional vorticity view](docs/media/showcase/vorticity_view.png)](docs/media/showcase/vorticity_view.png) |
+
+### Submit, queue and monitor
+
+Choose a CPU budget and track each case's stage, simulated time, latest Courant number and logs. Pause, continue or recover a checkpoint. The queue below contains real workflow-test cases.
+
+![Actual OpenFOAM task queue](docs/media/showcase/solver_queue_en.png)
+
+### Keep your OpenFOAM files within reach
+
+Browse mesh, solver, physical-property and initial-field dictionaries. Edit with line numbers, formatting, structure checks and parameter references.
+
+![OpenFOAM case dictionary editor](docs/media/showcase/dictionary_editor_en.png)
+
+<details>
+<summary><strong>More interfaces: scientific exports and SSH / Slurm</strong></summary>
+
+#### Export data for research and PINNs
+
+Export CSV, xytuvp MAT, GIF and complete `.foam` cases from genuinely saved fields.
+
+<img src="docs/media/showcase/exports_en.png" width="440" alt="Loaded real fields and export actions">
+
+#### Configure remote execution
+
+Set the host, identity, remote OpenFOAM environment, partition, CPU count and polling interval, then review the submission script. Your own cluster account is required; production-cluster execution is not yet qualified in this release.
+
+![SSH and Slurm connection configuration](docs/media/showcase/ssh_configuration_en.png)
+
+</details>
+
+Screenshots are recorded application-verification captures and example field views. [Image provenance](docs/media/showcase/provenance.json).
+
 ## Download and install
 
 No system Python is needed for either package. Extract the entire ZIP, then double-click `Setup.cmd`. Do not run inside the ZIP or copy a launcher alone.

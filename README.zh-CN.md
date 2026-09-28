@@ -12,6 +12,65 @@ A Windows desktop workbench for geometry, mesh design, OpenFOAM execution and sc
 
 [下载](https://mkdhxy.github.io/OpenFOAMFriend/?lang=zh) · [发布版本](https://github.com/MKDHXY/OpenFOAMFriend/releases/tag/v0.17.0) · [帮助](https://mkdhxy.github.io/OpenFOAMFriend/help.html?lang=zh) · [提问与建议](https://github.com/MKDHXY/OpenFOAMFriend/issues) · [协议全文](LICENSE)
 
+### 在一个可视化工作台完成 OpenFOAM 科研流程
+
+**绘制几何 → 制造网格 → 并行计算 → 查看与导出结果**
+
+**[下载 FULL 完整包](https://github.com/MKDHXY/OpenFOAMFriend/releases/download/v0.17.0/OpenFOAMFriend_FULL_v0.17.0_windows_x64.zip)** · **[下载 LITE 简易包](https://github.com/MKDHXY/OpenFOAMFriend/releases/download/v0.17.0/OpenFOAMFriend_LITE_v0.17.0_windows_x64.zip)** · [快速教程](https://mkdhxy.github.io/OpenFOAMFriend/quickstart_ZH.html)
+
+![OpenFOAM Friend 实际绘图工作区](docs/media/showcase/workbench_en.png)
+
+| 设计与网格 | 求解与管理 | 科研与数据 |
+| --- | --- | --- |
+| 带尺寸绘图、手动拓扑、blockMesh / Gmsh、均匀与渐变间距 | WSL 环境、核心预算、PIMPLE、模型配置与计算队列 | 网格质量、真实场可视化、CSV / GIF / MAT / .foam 导出 |
+
+## 看看软件能做什么
+
+### 绘图与手动网格拓扑
+
+在同一工作区查看模型和流场，编辑节点、直线、圆弧与区域，并指定分段数、渐变间距和边界。引导模式和专家模式都可用。
+
+![手动圆柱网格拓扑与区域控制](docs/media/showcase/manual_mesh_en.png)
+
+### 查看真实网格与物理场
+
+检查网格质量并定位问题面；切换速度、压力或涡量，查看真实保存的场和可调色条。下图为软件导出的示例视图。
+
+| 网格质量 · skewness | 后处理 · vorticity_z |
+| --- | --- |
+| [![网格质量视图](docs/media/showcase/mesh_quality.png)](docs/media/showcase/mesh_quality.png) | [![三维涡量视图](docs/media/showcase/vorticity_view.png)](docs/media/showcase/vorticity_view.png) |
+
+### 提交、排队、监控
+
+选择核心预算，查看算例阶段、物理时间、最新 Courant 数与日志，管理暂停、继续及检查点恢复。图中数据来自实际流程测试。
+
+![实际任务队列](docs/media/showcase/solver_queue_en.png)
+
+### 查看并编辑生成的 OpenFOAM 文件
+
+按目录浏览网格、求解器、物性及初始场文件；编辑器提供行号、格式化、结构检查与参数参考。
+
+![OpenFOAM 算例文件编辑器](docs/media/showcase/dictionary_editor_en.png)
+
+<details>
+<summary><strong>更多界面：结果导出与 SSH / Slurm 配置</strong></summary>
+
+#### 导出用于科研与 PINN 的数据
+
+从已加载的真实场导出 CSV、xytuvp MAT、GIF 和完整 `.foam` 算例。
+
+<img src="docs/media/showcase/exports_en.png" width="440" alt="真实场与导出操作">
+
+#### 配置远程计算
+
+设置主机、密钥、远端 OpenFOAM 环境、分区、核心数与轮询周期，并审阅提交脚本。需要自己的超算账号；当前发布尚未完成生产集群作业验证。
+
+![SSH 与 Slurm 配置](docs/media/showcase/ssh_configuration_en.png)
+
+</details>
+
+截图来自实际软件验证记录；部分功能图为英文界面，软件可切换中文。[查看截图来源记录](docs/media/showcase/provenance.json)。
+
 ## 下载与安装
 
 两个包均自带 Windows 运行环境，**不需要先安装 Python**。完整解压 ZIP 后双击 `Setup.cmd`，不要在压缩包内启动或只复制启动文件。

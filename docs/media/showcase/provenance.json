@@ -1,0 +1,61 @@
+{
+  "type": "Actual application and VTK screenshots from local release verification; no synthetic UI mockups",
+  "images": [
+    {
+      "file": "workbench_en.png",
+      "source_capture": "professional_EN.png",
+      "sha256": "d679b4983e537c4c7228069c88dbd3a6f640ee03f5f55855493bf741190359a5",
+      "capture_set": "v20260928_164718/evidence",
+      "unchanged_capture": true
+    },
+    {
+      "file": "manual_mesh_en.png",
+      "source_capture": "manual_context/manual_model_detail_EN.png",
+      "sha256": "5acba394189ab6af55b646cb7edc93387893cbcef58574b52b2d56c0bd1acb1b",
+      "capture_set": "v20260928_164718/evidence",
+      "unchanged_capture": true
+    },
+    {
+      "file": "mesh_quality.png",
+      "source_capture": "quality.png",
+      "sha256": "ae38767e026554db29791f227625d73e661874f545d898e05bfb58fcd805b306",
+      "capture_set": "v20260928_164718/evidence",
+      "unchanged_capture": true
+    },
+    {
+      "file": "solver_queue_en.png",
+      "source_capture": "queue.png",
+      "sha256": "69acd585ff65164066ab30a8cf40385a487832efc3bb19cc4177fa4fc72d5810",
+      "capture_set": "v20260928_164718/evidence",
+      "unchanged_capture": true
+    },
+    {
+      "file": "dictionary_editor_en.png",
+      "source_capture": "dictionary_editor_EN.png",
+      "sha256": "3177d3f5ed7f622b77527b56e6177fd10fdf8fa31a85b1e8323bd43547a5a640",
+      "capture_set": "v20260928_164718/evidence",
+      "unchanged_capture": true
+    },
+    {
+      "file": "ssh_configuration_en.png",
+      "source_capture": "ssh_configuration_EN.png",
+      "sha256": "5a1e6c4eea3215b1a2735fb892ecbb58734e3010f738376230793595bc1622ca",
+      "capture_set": "v20260928_164718/evidence",
+      "unchanged_capture": true
+    },
+    {
+      "file": "vorticity_view.png",
+      "source_capture": "workspace_vorticity_frame.png",
+      "sha256": "6aa50d3c2fc91289c4cb3f54a237c6afe3e3c3ac7e6eca8c93c1a16d0e6d6c55",
+      "capture_set": "v20260928_164718/evidence",
+      "unchanged_capture": true
+    },
+    {
+      "file": "exports_en.png",
+      "source_capture": "workspace_click_QA/results_loaded_EN.png",
+      "sha256": "39c47668adf2eb10e0b7199414ed7c69007841df58a71915385e848e841a079f",
+      "capture_set": "v20260928_164718/evidence",
+      "unchanged_capture": true
+    }
+  ]
+}
