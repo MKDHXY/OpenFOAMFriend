@@ -4,9 +4,9 @@
 
 **面向科研的 Windows 桌面工作台：几何设计 → 网格 → OpenFOAM 求解 → 科学后处理。**
 
-**作者：zongxuan 与 hanwen** · **版本：0.17.0** · **GPL-3.0-or-later**
+**作者：zongxuan 与 hanwen** · **版本：0.17.0** · **[GPL-3.0-or-later](LICENSE)**
 
-[English](README.md) · [中文](README.zh-CN.md) · [中英下载页面](https://mkdhxy.github.io/OpenFOAMFriend/) · [正式下载 Release](https://github.com/MKDHXY/OpenFOAMFriend/releases/tag/v0.17.0)
+[中英首页 / Bilingual](README.md) · [English](README.en.md) · [中文](README.zh-CN.md) · [中英下载页面](https://mkdhxy.github.io/OpenFOAMFriend/) · [正式下载 Release](https://github.com/MKDHXY/OpenFOAMFriend/releases/tag/v0.17.0)
 
 ## 下载与安装
 
@@ -61,5 +61,7 @@ py -3.12 -m venv .venv
 计算环境可用 FULL 包安装，或在软件中配置已有 Foundation14 WSL 发行版。[构建说明](BUILDING.md) · [贡献说明](CONTRIBUTING.md)。
 
 ## 许可证与署名
+
+[开源协议全文](LICENSE) · [中英许可说明](LICENSE_GUIDE.md) · [第三方声明](NOTICE)
 
 应用源码：[GPL-3.0-or-later](LICENSE)。作者：**zongxuan 和 hanwen**。第三方许可保留原条款，详见 [NOTICE](NOTICE)。本项目与上游机构独立，没有官方背书。引用信息见 [CITATION.cff](CITATION.cff)。
