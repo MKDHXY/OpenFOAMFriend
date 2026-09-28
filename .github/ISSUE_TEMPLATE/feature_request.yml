@@ -1,0 +1,15 @@
+name: "Suggestion / 功能建议"
+description: "Suggest a workflow improvement / 提出工作流程改进建议"
+title: "[Suggestion / 建议] "
+body:
+  - type: textarea
+    id: problem
+    attributes: {label: "Workflow problem / 工作流程问题", description: "Describe the concrete task and current difficulty. / 说明具体任务与当前困难。"}
+    validations: {required: true}
+  - type: textarea
+    id: desired
+    attributes: {label: "Desired behaviour / 希望的功能或行为"}
+    validations: {required: true}
+  - type: textarea
+    id: context
+    attributes: {label: "Examples and alternatives / 示例与替代方案", description: "Remove private data and credentials. / 请去除私人数据和凭据。"}

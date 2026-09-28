@@ -1,0 +1,18 @@
+name: "Question / 提问"
+description: "Ask about installation, meshing, solvers or exports / 安装、网格、求解与导出问题"
+title: "[Question / 提问] "
+body:
+  - type: markdown
+    attributes:
+      value: "English and Chinese are welcome. Do not share credentials or private research data. / 欢迎中英文，请勿分享凭据与私人研究数据。"
+  - type: input
+    id: version
+    attributes: {label: "Version and environment / 版本与环境", placeholder: "0.17.0 · FULL/LITE · Windows · WSL · OpenFOAM"}
+    validations: {required: true}
+  - type: textarea
+    id: question
+    attributes: {label: "Goal and question / 目标与问题", description: "What are you trying to do? Where are you stuck? / 想完成什么，卡在哪一步？"}
+    validations: {required: true}
+  - type: textarea
+    id: tried
+    attributes: {label: "What you tried and relevant evidence / 已尝试的方法与相关证据"}
