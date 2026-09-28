@@ -1,12 +1,16 @@
-<p align="center"><img src="assets/icon.png" width="72" alt="OpenFOAM Friend 图标"></p>
+<p align="center"><img src="assets/icon.png" width="72" alt="OpenFOAM Friend logo"></p>
+
+**Language:** [English](https://github.com/MKDHXY/OpenFOAMFriend#readme) | **中文**
 
 # OpenFOAM Friend
 
-**面向科研的 Windows 桌面工作台：几何设计 → 网格 → OpenFOAM 求解 → 科学后处理。**
+A Windows desktop workbench for geometry, mesh design, OpenFOAM execution and scientific post-processing.
 
-**作者：zongxuan 与 hanwen** · **版本：0.17.0** · **[GPL-3.0-or-later](LICENSE)**
+面向 Windows 的科研桌面工作台，串联几何建模、网格设计、OpenFOAM 求解与科学后处理。
 
-[中英首页 / Bilingual](README.md) · [English](README.en.md) · [中文](README.zh-CN.md) · [中英下载页面](https://mkdhxy.github.io/OpenFOAMFriend/) · [正式下载 Release](https://github.com/MKDHXY/OpenFOAMFriend/releases/tag/v0.17.0)
+**作者：** zongxuan 与 hanwen · **版本：** 0.17.0 · **开源协议：** [GPL-3.0-or-later](LICENSE)
+
+[下载](https://mkdhxy.github.io/OpenFOAMFriend/?lang=zh) · [发布版本](https://github.com/MKDHXY/OpenFOAMFriend/releases/tag/v0.17.0) · [帮助](https://mkdhxy.github.io/OpenFOAMFriend/help.html?lang=zh) · [提问与建议](https://github.com/MKDHXY/OpenFOAMFriend/issues) · [协议全文](LICENSE)
 
 ## 下载与安装
 
@@ -19,7 +23,7 @@
 
 [SHA-256 校验](https://github.com/MKDHXY/OpenFOAMFriend/releases/download/v0.17.0/SHA256SUMS.txt) · [中文安装说明](https://mkdhxy.github.io/OpenFOAMFriend/installation_ZH.html) · [English installation](https://mkdhxy.github.io/OpenFOAMFriend/installation_EN.html)
 
-**系统要求：**Windows10 build19041+ / Windows11，Intel/AMD x64；至少10GB可用空间，建议15GB以上。首次启用 WSL 需要管理员权限、BIOS/UEFI 虚拟化支持，可能手动重启。本包不能绕过单位策略，不包含 Windows 操作系统，不提供 ARM64/macOS/原生 Linux GUI 版本。
+**系统要求：** Windows10 build19041+ / Windows11，Intel/AMD x64；至少10GB可用空间，建议15GB以上。首次启用 WSL 需要管理员权限、BIOS/UEFI 虚拟化支持，可能手动重启。本包不能绕过单位策略，不包含 Windows 操作系统，不提供 ARM64/macOS/原生 Linux GUI 版本。
 
 **欢迎页、安装器和设置内均可选择中文 / English。**
 
@@ -42,7 +46,7 @@
 
 已实际把干净镜像导入独立 WSL 实例，验证含中文和空格目录的安装、自带 Python 隔离运行、本地 C++ DLL、欢迎页语言切换及原功能回归。[详细验证证据](docs/verification/package_verification.html)。
 
-**未验证范围：**本机为已有 WSL 的 Windows10 19045 x64。另一台裸机的 BIOS/UAC/重启全程、所有 Windows11/GPU 配置、真实生产超算提交没有完整实测。本版本为科研工程版本，不是工业认证或完整 ParaView 替代。自带 OpenSSH 客户端是 NOTICE 标明的 Microsoft 上游预览版。
+**未验证范围：** 本机为已有 WSL 的 Windows10 19045 x64。另一台裸机的 BIOS/UAC/重启全程、所有 Windows11/GPU 配置、真实生产超算提交没有完整实测。本版本为科研工程版本，不是工业认证或完整 ParaView 替代。自带 OpenSSH 客户端是 NOTICE 标明的 Microsoft 上游预览版。
 
 ## 文档与支持
 

@@ -1,12 +1,16 @@
 <p align="center"><img src="assets/icon.png" width="72" alt="OpenFOAM Friend logo"></p>
 
+**Language:** **English** | [中文](README.zh-CN.md)
+
 # OpenFOAM Friend
 
-**A Windows desktop workbench for geometry, mesh design, OpenFOAM execution and scientific post-processing.**
+A Windows desktop workbench for geometry, mesh design, OpenFOAM execution and scientific post-processing.
 
-**Authors: zongxuan & hanwen** · **Version: 0.17.0** · **[GPL-3.0-or-later](LICENSE)**
+面向 Windows 的科研桌面工作台，串联几何建模、网格设计、OpenFOAM 求解与科学后处理。
 
-[Bilingual / 中英首页](README.md) · [English](README.en.md) · [中文](README.zh-CN.md) · [Bilingual download page](https://mkdhxy.github.io/OpenFOAMFriend/) · [Releases](https://github.com/MKDHXY/OpenFOAMFriend/releases/tag/v0.17.0)
+**Authors:** zongxuan & hanwen · **Version:** 0.17.0 · **License:** [GPL-3.0-or-later](LICENSE)
+
+[Download](https://mkdhxy.github.io/OpenFOAMFriend/) · [Releases](https://github.com/MKDHXY/OpenFOAMFriend/releases/tag/v0.17.0) · [Help](https://mkdhxy.github.io/OpenFOAMFriend/help.html) · [Questions and suggestions](https://github.com/MKDHXY/OpenFOAMFriend/issues) · [Full license](LICENSE)
 
 ## Download and install
 
@@ -17,7 +21,7 @@ No system Python is needed for either package. Extract the entire ZIP, then doub
 | FULL | [Windows x64 · complete offline environment](https://github.com/MKDHXY/OpenFOAMFriend/releases/download/v0.17.0/OpenFOAMFriend_FULL_v0.17.0_windows_x64.zip) | Includes app-local Python/Qt/VTK/Gmsh, signed Microsoft WSL MSI, and a clean Ubuntu24.04 image with OpenFOAM14 and OpenMPI. |
 | LITE | [Windows x64 · app and diagnostics](https://github.com/MKDHXY/OpenFOAMFriend/releases/download/v0.17.0/OpenFOAMFriend_LITE_v0.17.0_windows_x64.zip) | Includes the same Windows runtime. Missing WSL/OpenFOAM is reported; Linux/system components are never installed. |
 
-[SHA-256 checksums](https://github.com/MKDHXY/OpenFOAMFriend/releases/download/v0.17.0/SHA256SUMS.txt) · [English installation guide](https://mkdhxy.github.io/OpenFOAMFriend/installation_EN.html) · [中文安装指南](https://mkdhxy.github.io/OpenFOAMFriend/installation_ZH.html)
+[SHA-256 checksums](https://github.com/MKDHXY/OpenFOAMFriend/releases/download/v0.17.0/SHA256SUMS.txt) · [English installation guide](https://mkdhxy.github.io/OpenFOAMFriend/installation_EN.html) · [Chinese installation guide](https://mkdhxy.github.io/OpenFOAMFriend/installation_ZH.html)
 
 **Requirements:** Windows10 build19041+ or Windows11 on Intel/AMD x64; 10GB free minimum, 15GB+ recommended. FULL first-time WSL enablement needs administrator permission, BIOS/UEFI virtualization and possibly a manual restart. The package does not bypass corporate policy or include the Windows operating system. ARM64/macOS/native Linux GUI builds are not supplied.
 
@@ -46,7 +50,7 @@ The clean Linux image was actually imported into independent WSL distributions. 
 
 ## Documentation and support
 
-[English manual](docs/manual_EN.html) · [中文手册](docs/manual_ZH.html) · [English quickstart](docs/quickstart_EN.html) · [中文快速教程](docs/quickstart_ZH.html) · [Report a reproducible issue](https://github.com/MKDHXY/OpenFOAMFriend/issues/new/choose) · [Help website](http://spaceaero.space)
+[English manual](docs/manual_EN.html) · [Chinese manual](docs/manual_ZH.html) · [English quickstart](docs/quickstart_EN.html) · [Chinese quickstart](docs/quickstart_ZH.html) · [Report a reproducible issue](https://github.com/MKDHXY/OpenFOAMFriend/issues/new/choose) · [Help website](http://spaceaero.space)
 
 ## Run from source
 
