@@ -12,6 +12,10 @@
 
 [下载 / Download](https://mkdhxy.github.io/OpenFOAMFriend/) · [Release](https://github.com/MKDHXY/OpenFOAMFriend/releases/tag/v0.17.0) · [Help / 帮助](https://mkdhxy.github.io/OpenFOAMFriend/help.html) · [建议与提问 / Issues](https://github.com/MKDHXY/OpenFOAMFriend/issues)
 
+网站说明正文同时展示中英文；顶部 **Language** 切换导航、按钮与标题，首次打开默认为 **English**。
+
+Website descriptions show both English and Chinese. The top **Language** selector changes navigation, buttons and headings; the first visit defaults to **English**.
+
 ## 开源协议 / Open-source license
 
 本项目应用源码采用 **GNU General Public License v3.0 or later（GPL-3.0-or-later）**。作者为 **zongxuan 与 hanwen**。依照协议条款，可以使用、研究、修改和再分发；分发修改版时应遵守 GPL 的许可证及对应源码要求。第三方组件保留原有版权和许可证。
